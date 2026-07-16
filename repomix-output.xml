@@ -1,0 +1,4425 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+Home.md
+README.md
+Topic-01:-Software-Quality-Concept-and-Principle.md
+Topic-02:-Software-Quality-Model-and-Standards.md
+Topic-03:-Software-Process-Improvement.md
+Topic-04:-Software-Quality-Management.md
+Topic-05:-Software-Quality-Plan.md
+Topic-06:-Software-Quality-Assurance.md
+Topic-07:-Software-Quality-Control.md
+Topic-08:-Software-Metrics-and-Measurement.md
+Topic-09:-Review-and-Inspections.md
+Topic-10:-Quality-Management-System.md
+YourNote-1001:-QMS.md
+YourNote-1002:-Elements-of-QMS.md
+YourNote-101:-Software-Quality-Characteristics.md
+YourNote-201:-McCall-Model.md
+YourNote-202:-Product‐Oriented-Approach.md
+YourNote-203:-Process‐Oriented-Approach.md
+YourNote-301:-CMMI.md
+YourNote-302:-CMM-vs-CMMI.md
+YourNote-303:-ISO‐The-Difference.md
+YourNote-401:-SQM-Process.md
+YourNote-402:-SQA-in-SDLC.md
+YourNote-403:-Creating-a-new-“site”-in-Jira.md
+YourNote-404:-Important-Term.md
+YourNote-405:-Where-to-implement-SQA-&-QC.md
+YourNote-406:-AGROKEDAH‐Epic-List.md
+YourNote-501:-Components-of-SQP.md
+YourNote-601:-SQA-Tools.md
+YourNote-602:-Software-Audit.md
+YourNote-701:-Software-Quality-Control.md
+YourNote-702:-Reliability-Growth-Models.md
+YourNote-703:-Example-FEQ.md
+YourNote-801:-Software-Metrics.md
+YourNote-802:-CI-CD-Metrics.md
+YourNote-803:-DORA-Metrics.md
+YourNote-901:-Peer-Review.md
+YourNote-902:-Walkthrough.md
+YourNote-903:-Inspection.md
+YourNote-904:-Technical-Review.md
+YourNote-KIV:-Rayleigh-Model.md
+YourNote-KIV:-Rayleigh-vs-Agile-SQA-Plan.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="YourNote-202:-Product‐Oriented-Approach.md">
+## What Is the Product-Oriented Approach to Software Quality?
+The product-oriented approach focuses on the quality of the software product itself — its features, performance, reliability, usability, and other observable characteristics.
+
+
+## Core Focus of Product-Oriented Quality
+| Focus Area  | Description                     |
+| ----------- | ------------------------------- |
+| Output      | Final software system           |
+| Measurement | Quality attributes & metrics    |
+| Evaluation  | Testing, inspection, validation |
+| Timing      | Mostly after development        |
+| Nature      | Reactive (detect defects)       |
+
+
+## How Product-Oriented Quality Is Evaluated
+| Technique           | Purpose                   |
+| ------------------- | ------------------------- |
+| Functional testing  | Verify requirements       |
+| Performance testing | Measure speed & load      |
+| Usability testing   | Evaluate user experience  |
+| Security testing    | Identify vulnerabilities  |
+| Reliability testing | Check stability           |
+| Acceptance testing  | Confirm stakeholder needs |
+📌 Quality is validated through testing & inspection.
+
+
+## Limitations of Product-Oriented Approach
+| Limitation            | Explanation                          |
+| --------------------- | ------------------------------------ |
+| Late defect discovery | Issues found after development       |
+| High rework cost      | Fixing late defects is expensive     |
+| No process insight    | Does not explain *why* defects occur |
+| Quality inconsistency | Same process not guaranteed          |
+📌 That’s why modern SQA combines product + process approaches.
+</file>
+
+<file path="YourNote-203:-Process‐Oriented-Approach.md">
+## What Is the Process-Oriented Approach to Software Quality?
+The process-oriented approach focuses on how software is developed, rather than only evaluating the final product.
+
+
+## Core Philosophy
+| Product-Oriented      | Process-Oriented                |
+| --------------------- | ------------------------------- |
+| Focus on final output | Focus on development activities |
+| Testing at the end    | Quality built in from start     |
+| Fix defects later     | Prevent defects early           |
+| Reactive              | Preventive                      |
+
+
+## Key Principles of the Process-Oriented Approach
+#### 1. Quality Is Built In, Not Inspected In
+Quality activities start at:
+- Requirements
+- Design
+- Coding
+- Testing
+- Not just during final testing
+
+📌 Example:
+Requirements reviews to prevent ambiguity before coding starts.
+
+
+#### 2. Standardized and Defined Processes
+Organizations follow documented procedures for:
+- Requirements management
+- Design reviews
+- Coding standards
+- Testing strategy
+- Change management
+
+📌 Example standards:
+- ISO/IEC 15504
+- CMMI
+
+
+#### 3. Continuous Improvement
+Processes are:
+- Measured
+- Analyzed
+- Improved over time
+
+This commonly follows the PDCA Cycle:
+- Plan – Define processes
+- Do – Execute processes
+- Check – Audit & measure
+- Act – Improve processes
+
+
+#### 4. Prevention Over Detection
+| Prevention          | Detection      |
+| ------------------- | -------------- |
+| Training developers | Bug fixing     |
+| Code reviews        | Debugging      |
+| Design validation   | Patch releases |
+
+📌 Fixing a defect after release costs much more than preventing it early.
+
+
+#### 5. Process Measurement & Metrics
+Quality is tracked using process metrics, not just defects. Examples:
+- Defect Injection Rate
+- Defect Removal Efficiency (DRE)
+- Review effectiveness
+- Test coverage
+- Cycle time
+
+
+## Common Process-Oriented Quality Models
+1. CMMI (Capability Maturity Model Integration)
+2. ISO 9001
+
+
+## Agile & DevOps (Modern View)
+Even Agile is process-oriented:
+- Sprint planning
+- Daily stand-ups
+- Retrospectives
+- CI/CD pipelines
+
+📌 Agile emphasizes adaptive processes, not no process.
+
+
+## Why Process-Oriented Quality Matters
+| Stakeholder  | Benefit               |
+| ------------ | --------------------- |
+| Management   | Predictable delivery  |
+| Developers   | Clear guidelines      |
+| Testers      | Early involvement     |
+| Customers    | Consistent quality    |
+| Organization | Reduced rework & cost |
+
+
+## Mapping to SQA Activities
+| SDLC Phase   | Process-Oriented Activity |
+| ------------ | ------------------------- |
+| Requirements | Requirement inspections   |
+| Design       | Design walkthroughs       |
+| Coding       | Coding standards, reviews |
+| Testing      | Test planning, metrics    |
+| Deployment   | Release procedures        |
+| Maintenance  | Change management         |
+
+
+## Process-Oriented vs Product-Oriented
+| Aspect   | Process-Oriented      | Product-Oriented       |
+| -------- | --------------------- | ---------------------- |
+| Focus    | How software is built | What software delivers |
+| Timing   | Throughout lifecycle  | Mostly at the end      |
+| Goal     | Prevent defects       | Detect defects         |
+| Examples | CMMI, ISO/IEC 15504   | ISO/IEC 25010          |
+
+
+## References:
+1. https://en.wikipedia.org/wiki/ISO/IEC_15504
+1. https://www.dqsglobal.com/en/certify/iso-iec-15504-spice-certification
+1. https://cfecert.com/iso-iec-15504-information-technology-and-software-process-assessment/
+1. https://www.researchgate.net/publication/227668602_ISOIEC_15504-Evolution_to_an_international_standard
+</file>
+
+<file path="YourNote-303:-ISO‐The-Difference.md">
+## ISO/IEC 15504 vs ISO/IEC 25010
+Both ISO/IEC 15504 and ISO/IEC 25010 are international standards related to software quality—but they focus on different dimensions:
+- ISO/IEC 15504 focuses on the quality of software processes.
+- ISO/IEC 25010 focuses on the quality of software products.
+
+## Purpose
+### ISO/IEC 15504 (SPICE) – Process Assessment Standard
+- Evaluates software development processes.
+- Measures process capability and process maturity.
+- Helps organisations improve their software development methods.
+
+### ISO/IEC 25010 – Product Quality Model
+- Evaluates the quality of a software product.
+- Defines product quality characteristics and quality-in-use characteristics.
+- Used to assess how well the system performs for the end user.
+
+## Focus Area
+| Standard          | Focus                                                 |
+| ----------------- | ----------------------------------------------------- |
+| **ISO/IEC 15504** | How well processes are performed (process capability) |
+| **ISO/IEC 25010** | How good the software product is (product quality)    |
+
+
+## What They Measure
+#### ISO/IEC 15504 Measures:
+- Process performance
+- Management practices
+- Resource allocation
+- Consistency of process execution
+- Capability levels (0 to 5)
+#### Example:
+- How well does the development team manage requirements, testing, configuration, and maintenance?
+
+#### ISO/IEC 25010 Measures:
+- Functional suitability
+- Reliability
+- Usability
+- Maintainability
+- Performance efficiency
+- Security
+- Compatibility
+- Portability
+#### Example:
+- How correct, fast, secure, usable, and stable is the software product?
+
+## Structure
+#### ISO/IEC 15504
+Uses Capability Levels 0–5:  
+0. Incomplete
+1. Performed
+2. Managed
+3. Established
+4. Predictable
+5. Optimizing
+
+#### ISO/IEC 25010
+Uses 8 Product Quality characteristics:
+1. Functional suitability
+2. Performance efficiency
+3. Compatibility
+4. Usability
+5. Reliability
+6. Security
+7. Maintainability
+8. Portability
+- Also includes Quality-in-Use Characteristics:
+  - Effectiveness
+  - Efficiency
+  - Satisfaction
+  - Freedom from risk
+  - Context coverage
+
+## Usage / Application
+| ISO Standard      | Who Uses It?                                    | For What Purpose?                                                       |
+| ----------------- | ----------------------------------------------- | ----------------------------------------------------------------------- |
+| **ISO/IEC 15504** | Organizations, process engineers                | Improving software development processes; audits; CMMI-like assessments |
+| **ISO/IEC 25010** | Testers, quality analysts, developers, UX teams | Defining and measuring software product quality                         |
+
+
+## Example Scenario
+#### ISO/IEC 15504 Example:
+An IT company wants to improve its testing process. An assessor evaluates whether the testing process is:
+- repeatable
+- documented
+- controlled
+- measurable
+
+#### ISO/IEC 25010 Example:
+A mobile banking app is evaluated on:
+- security
+- usability
+- reliability
+- performance
+
+## Summary
+| Aspect              | **ISO/IEC 15504 (SPICE)**  | **ISO/IEC 25010**                 |
+| ------------------- | -------------------------- | --------------------------------- |
+| **Focus**           | Software processes         | Software product quality          |
+| **Goal**            | Improve process capability | Improve product quality           |
+| **Assessment Type** | Process assessment         | Product evaluation                |
+| **Output**          | Capability level (0–5)     | Quality score for characteristics |
+| **Users**           | Organizations, auditors    | Developers, QA, testers           |
+| **Scope**           | How software is built      | The quality of the final software |
+
+
+## References:
+1. https://iso25000.com/en/iso-25000-standards/iso-25010
+1. https://en.wikipedia.org/wiki/ISO_9000_family
+</file>
+
+<file path="YourNote-403:-Creating-a-new-“site”-in-Jira.md">
+### Step 1: Go to Jira Sign-Up Page
+- Visit: https://www.atlassian.com/software/jira
+- Click “Get it free”
+
+### Step 2: Create an Atlassian Account
+- Sign up using:
+    - Email + password
+    - Or Google account
+>This creates your Atlassian account (required for Jira)
+
+
+### Step 3: Create Your Jira Site (Important Step)
+You will be asked to create your site URL:
+
+Format:
+```
+https://your-site-name.atlassian.net
+```
+Example:
+```
+https://agrokedah.atlassian.net
+```
+Choose wisely — this becomes your permanent Jira site address.
+
+
+### Step 4: Name Your Organization
+Enter your:
+   - Organization name (e.g., AgroKedah)
+   - Team size
+   - Use case (e.g., Software Development, Project Management)
+
+### Step 5: Choose a Template / Project Type
+After site creation, Jira will prompt you to create your first project. Choose one:
+- Scrum → Agile sprint-based projects
+- Kanban → Continuous workflow (good for beginners)
+- Bug tracking → Issue-focused tracking
+
+### Step 6: Invite Team Members
+- Add team members via email
+- Or skip and invite later
+
+### Step 7: Access Your Jira Site
+Login at:
+```
+https://agrokedah.atlassian.net
+```
+You now have a fully functional Jira site
+</file>
+
+<file path="YourNote-406:-AGROKEDAH‐Epic-List.md">
+## A. CORE BUSINESS PROCESS (MAIN WORKFLOW)
+These represent the real-world flow of AgroKedah:
+1. Aid Application Management (Permohonan Bantuan)
+2. Investigation & Verification (Siasatan & Pengesahan)
+3. Approval & Decision Workflow (Kelulusan & Keputusan)
+4. Monitoring & Follow-up (Pemantauan & Susulan)
+
+## B. SYSTEM FUNCTIONAL EPICS
+Supporting features required by the system:
+1. User & Role Management
+2. Document Management
+3. Notification & Communication
+4. Reporting & Analytics
+
+## C. SYSTEM DEVELOPMENT EPICS
+Technical development components:
+1. Web Application Development
+2. Mobile Application Development
+3. Backend & API Development
+4. Security & Authentication
+
+## D. SQA (SOFTWARE QUALITY ASSURANCE) EPICS
+Focus: Process quality (prevent defects)
+1. Test Planning & Strategy
+1. Testing Execution (Unit, Integration, System, UAT)
+1. Code Review & Inspection
+1. Defect Management
+1. CI/CD & Automation Pipeline
+1. Software Metrics & Measurement
+1. Security Testing
+1. Performance Testing
+1. SQA Documentation & Audit
+
+## E. QUALITY CONTROL (QC) EPICS
+Focus: Product quality (detect defects)
+1. Data Quality Control
+1. Application Verification QC
+1. Field Inspection QC
+1. Approval Quality Control
+1. Post-Approval Monitoring QC
+1. System Output Validation QC
+
+### Total Epics = 27
+</file>
+
+<file path="Home.md">
+# STTPK3123 Software Quality Management
+
+### Synopsis
+
+This course will provide the students with theoretical knowledge about concepts of software quality, quality models,
+software quality standards and methodologies used in the software industry. The principles of software development and management are presented with special emphasis on the processes and activities of quality assurance. In addition, the role of standards, principles, and procedures is discussed, with examples drawn from ISO, CMMI, and other process models and standards. This course provides practical knowledge of a variety of quality assurance techniques and an understanding of some of the trade-offs between techniques.
+
+### Course Learning Outcome (CLO):
+Upon completion of the course, students are able to:
+1. Describe the concept and techniques of Software Quality Management (C2)
+2. Explain the implementation of Software Quality Management (C2)
+3. Explain the process of evaluating a software to ensure it is compliance with the quality standard (A3)
+4. Apply the appropriate concepts and techniques to evaluate a software (C3)
+
+### Topics
+| No. | Topic                                            | Week(s) |
+|:---:|--------------------------------------------------|:-------:|
+|  1. | Software Quality Concept and Principle           |    1    |
+|  2. | Software Quality Model and Standards             |    1    |
+|  3. | Software Process Improvement                     |    1    |
+|  4. | Software Quality Management                      |    1    |
+|  5. | Software Quality Plan                            |    1    |
+|  6. | Software Quality Assurance                       |    2    |
+|  7. | Software Quality Control                         |    2    |
+|  8. | Software Metrics and Measurement                 |    2    |
+|  9. | Review and Inspections                           |    2    |
+| 10. | Quality Management System                        |    1    |
+|     | Total                                            |    14   |
+
+### Assessment Methods:
+| Method | Percentage                      |OBE|
+|:---|:-----------------------------------:|:---:|  
+|  Quiz 1             | 2.5%               | 20  |   
+|  Quiz 2             | 2.5%               |     |
+|  Assignment 1       | 15%                | 100 | 
+|  Assignment 2       | 15%                |     |
+|  Project            | 20%                | 50  | 
+|  Project Presentation | 5%               | 20  |
+|  Final Examination  | 40%                | 100 |
+
+### References:
+1. Abu Sayed Mahfuz (2016). Software Quality Assurance: Integrating Testing, Security, and Audit (1st Ed.) :Auerbach Publications
+1. Daniel Galin (2018). Software Quality: Concepts and Practice :Wiley
+1. https://en.wikipedia.org/wiki/Software_quality_management
+1. https://en.wikipedia.org/wiki/Software_quality
+</file>
+
+<file path="README.md">
+# StudySQM
+</file>
+
+<file path="Topic-01:-Software-Quality-Concept-and-Principle.md">
+### Goal
+To introduce the fundamental ideas, characteristics, and factors that define software quality. Students will learn why quality is challenging to achieve and how quality principles guide the software engineering process.
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Define software quality from technical and customer perspectives.
+1. Explain the main challenges in achieving software quality.
+1. Identify and describe software quality characteristics based on international models such as ISO 9126 and ISO/IEC 25010.
+1. Discuss quality concepts and software quality factors that influence product and process quality.
+
+### 📌 Topics to Cover                               
+1. Defining Software Quality
+   - Meaning of “quality” in the context of software.
+   - The difference between the quality of the product and the quality of the process.
+   - Views of quality:
+     * __User-based__: fitness for purpose.
+     * __Developer-based__: conformance to requirements.
+     * __Manufacturing-based__: defect prevention and process consistency.
+   - Common definitions (ISO 9000, IEEE, etc).
+   - Example: comparing “working” vs “high-quality” mobile applications.
+
+2. Challenges of Software Quality
+   - Intangibility: Software cannot be physically inspected.
+   - Complexity: millions of interacting components.
+   - Changing requirements: evolving user needs and technologies.
+   - Time and cost constraints: pressure to deliver quickly.
+   - Human factors: developer skill, communication, and team coordination.
+   - Testing limitations: exhaustive testing is impossible.
+   - Maintenance and evolution: quality degradation over time.
+   - Discussion Example: Why do software defects still occur even after extensive testing?
+
+3. Software Quality Characteristics
+(Based on ISO/IEC 25010 model)
+   - Functional Suitability – correctness, appropriateness.
+   - Performance Efficiency – response time, resource use.
+   - Compatibility – co-existence, interoperability.
+   - Usability – learnability, accessibility, satisfaction.
+   - Reliability – availability, fault tolerance, recoverability.
+   - Security – confidentiality, integrity, authenticity.
+   - Maintainability – modularity, reusability, analyzability.
+   - Portability – adaptability, installability, replaceability.
+   - Class Exercise: Match each characteristic with an example (e.g., usability → clear navigation).
+
+4. Software Quality Factors  
+(From McCall, Boehm, and Dromey models)
+
+Category | Example Factors | Description
+-- | -- | --
+Product Operation | Correctness, Reliability, Efficiency, Integrity, Usability | Affects how well the software performs for users.
+Product Revision | Maintainability, Flexibility, Testability | Influence how easily software can be changed or repaired.
+Product Transition | Portability, Reusability, Interoperability | Affect adaptability to new environments.
+
+Modern frameworks integrate these factors into Agile quality metrics (e.g., code coverage, defect density)
+
+5. Quality Concepts and Principles
+   - Quality Assurance (QA) vs. Quality Control (QC) vs. Testing
+   - Prevention over inspection: build quality in early.
+   - Continuous improvement: use feedback loops (PDCA Cycle).
+   - Process orientation: quality depends on the development process quality.
+   - Management responsibility: leadership commitment is crucial.
+   - Customer focus: satisfaction and fitness for purpose.
+   - Measurement and analysis: metrics drive improvement.
+   - Example Concepts:
+     * Defect density = defects / KLOC
+     * Mean Time Between Failures (MTBF)
+     * Continuous Integration/Continuous Delivery (CI/CD) for quality consistency
+
+
+### 💪 Hands-on Activity
+1. Case Study: Review a failed software project (e.g., healthcare or banking) and identify which quality factors were neglected.
+2. Group Discussion: “Can software be considered high-quality if it meets deadlines but users are unhappy?”
+3. Mini Exercise: Map ISO 25010 characteristics to an existing web or mobile app.
+
+
+### 🛠️ Tools to Use
+1. N/A
+
+
+### 📚 Suggested Readings / Videos
+1. ISO/IEC 25010: System and Software Quality Models.
+1. Boehm, B. (1978). Characteristics of Software Quality.
+1. IEEE 730: Standard for Software Quality Assurance Plans.
+</file>
+
+<file path="Topic-02:-Software-Quality-Model-and-Standards.md">
+### Goal
+To explain the major software quality models and standards used in the software industry, focusing on how these models define, categorise, and measure software quality from both product-oriented and process-oriented perspectives.
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Describe and compare the Boehm, FURPS, and McCall quality models.
+1. Differentiate between product-oriented and process-oriented quality approaches.
+
+### 📌 Topics to Cover                               
+1. Boehm, FURPS, and McCall Models
+   - Boehm Model (1978)
+     * One of the earliest software quality frameworks.
+     * Defines three main levels:
+       - High-level characteristics (Utility, Maintainability, Portability)
+       - Intermediate-level characteristics (Reliability, Efficiency, Human Engineering, Testability, etc.)
+       - Primitive-level metrics (quantifiable measures such as response time, defects per KLOC).
+     * Focuses on both user satisfaction and developer needs.
+     * Example: “Ease of understanding” and “Modularity” improve maintainability.
+
+    - FURPS Model (by Hewlett-Packard)
+      * Acronym:
+        - F – Functionality (features, capability, security)
+        - U – Usability (human factors, aesthetics, documentation)
+        - R – Reliability (availability, failure frequency, accuracy)
+        - P – Performance (speed, efficiency, response time)
+        - S – Supportability (maintainability, adaptability, serviceability)
+      * Useful for organising non-functional requirements in software projects.
+      * Example: In a mobile banking app, Usability → intuitive interface; Reliability → zero transaction errors.
+
+    - McCall Model (1977)
+      * Divides quality into three main categories:
+        - Product Operation: Correctness, Reliability, Efficiency, Integrity, Usability
+        - Product Revision: Maintainability, Flexibility, Testability
+        - Product Transition: Portability, Reusability, Interoperability
+      * Links quality factors to quality criteria (user expectations) and metrics (quantifiable measures).
+      * Emphasises bridging the gap between user and developer views of quality.
+      * Practical Application: Used to evaluate system design documentation and testing results.
+
+2. Product-Oriented Approach of Software Quality
+   - Focuses on attributes of the software product itself.
+   - Measures what the software does and how well it performs.
+   - Involves metrics such as:
+     * Correctness (accuracy of outputs)
+     * Reliability (frequency of failures)
+     * Efficiency (use of resources)
+     * Usability (ease of learning and use)
+   - Supported by product-based models such as McCall, Boehm, FURPS, and ISO/IEC 25010.
+   - Tools used: static analysers, test coverage tools, and defect tracking systems.
+   - Example: Using SonarQube to assess maintainability and complexity metrics in code.
+
+3. Process-Oriented Approach of Software Quality
+   - Focuses on the processes and activities involved in producing the software.
+   - Assumes “a good process produces a good product.”
+   - Supported by process standards and frameworks such as:
+     * ISO 9001: Quality management systems.
+     * CMMI (Capability Maturity Model Integration): Maturity levels of software organisations.
+     * IEEE 730: Standard for Software Quality Assurance Plans.
+   - Involves process improvement techniques (PDCA, Six Sigma, Total Quality Management).
+   - Encourages continuous improvement and quality culture across the organisation.
+   - Example: Adopting Agile practices like CI/CD pipelines to improve process quality.
+
+### 💪 Hands-on Activity
+1. Model Comparison Table: Students compare Boehm, FURPS, and McCall models side by side.
+1. Case Analysis: Identify whether a given quality issue is product-oriented or process-oriented.
+1. Mini Project: Evaluate a sample software product using at least one quality model.
+
+
+### 🛠️ Tools to Use
+1. SonarQube
+1. JMeter
+
+
+### 📚 Suggested Readings / Videos
+1. Boehm, B. (1978). Characteristics of Software Quality. TRW Software.
+1. McCall, J. A. (1977). Factors in Software Quality. U.S. Air Force.
+1. Hewlett-Packard. (1992). FURPS Model for Software Quality Requirements.
+1. ISO/IEC 25010: Systems and Software Quality Models.
+1. ISO 9001: Quality Management Systems — Requirements.
+1. SEI. (2010). CMMI for Development, Version 1.3.
+</file>
+
+<file path="Topic-03:-Software-Process-Improvement.md">
+### Goal
+To introduce the concepts, models, and standards used to systematically improve the software development process. This topic focuses on understanding CMM, CMMI, and ISO 15504 (SPICE) as frameworks that guide organisations toward higher process maturity and quality.
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Explain the concept of Software Process Improvement (SPI) and its importance.
+2. Describe the Capability Maturity Model (CMM) and its staged approach.
+3. Discuss the Capability Maturity Model Integration (CMMI) and its integrated structure.
+4. Explain the Assessment Process Standard (ISO/IEC 15504 or SPICE) and how it measures process capability.
+5. Compare the similarities and differences between CMM, CMMI, and ISO 15504 models.
+
+
+### 📌 Topics to Cover                               
+#### 1. Staged Models — Capability Maturity Model (CMM)
+   - Developed by the Software Engineering Institute (SEI) at Carnegie Mellon University in the late 1980s.
+   - Focuses on process maturity — how well software processes are defined, managed, measured, and optimised.
+   - Divides organisational maturity into five levels:
+
+| **Maturity Level**      | **Focus**                        | **Description**                                                                |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------------------------ |
+| **Level 1 – Initial**    | Ad hoc                           | Unstructured process; success depends on individual effort.                    |
+| **Level 2 – Repeatable** | Basic project management         | Policies and procedures established; processes repeatable for similar projects. |
+| **Level 3 – Defined**    | Organization-wide standardization | Processes are documented and standardized across the organization.             |
+| **Level 4 – Managed**    | Quantitative management          | Processes are measured and controlled using metrics.                           |
+| **Level 5 – Optimizing** | Continuous improvement           | Organization focuses on innovation and proactive improvement.                  |
+
+>Example: A company moves from Level 2 to Level 3 by standardising its coding and testing practices across all teams.
+
+#### 2. Integrated Models — Capability Maturity Model Integration (CMMI)
+   - Introduced by SEI to integrate various CMMs into a single model.
+   - Provides a comprehensive framework for improving processes across disciplines such as software engineering, systems engineering, and project management.
+   - Two main representations:
+     * Staged Representation: Similar to the original CMM with five maturity levels.
+     * Continuous Representation: Focuses on capability levels (0–5) for each process area independently.
+   - Key Process Areas (KPAs):
+     * Project Management (e.g., risk, configuration)
+     * Engineering (e.g., requirements, design, testing)
+     * Support (e.g., measurement, quality assurance)
+     * Process Management (e.g., training, process definition)
+>Purpose: Helps organisations assess process maturity and plan systematic improvements.
+- Example: A software company adopts CMMI Level 3 to ensure consistent process documentation and defined workflows across projects.
+
+#### 3. Assessment Process Standard — ISO/IEC 15504 (SPICE)
+   - SPICE stands for Software Process Improvement and Capability Determination.
+   - International standard for assessing software process capability and guiding process improvement.
+   - Provides a framework for evaluating processes using capability levels (0–5):
+
+| **Capability Level**      | **Process Attribute**         | **Description**                                 |
+| -------------------------- | ----------------------------- | ----------------------------------------------- |
+| **Level 0 – Incomplete**   | Not implemented               | Process not performed or fails to meet purpose. |
+| **Level 1 – Performed**    | Performance management        | Process achieves its intended purpose.          |
+| **Level 2 – Managed**      | Resource & product management | Process is planned, monitored, and controlled.  |
+| **Level 3 – Established**  | Process definition            | Standard process defined and deployed.          |
+| **Level 4 – Predictable**  | Measurement & control         | Process operates within defined limits.         |
+| **Level 5 – Optimizing**   | Continuous improvement        | Focuses on process innovation and improvement.  |
+
+> Purpose: ISO 15504 helps organisations understand how well processes are performed and what improvements are needed.
+
+#### 💡 Relation to CMMI: ISO 15504 and CMMI share the same goal — improving process maturity — but ISO 15504 is an internationally recognized standard, while CMMI is a model framework.
+
+### 💪 Hands-on Activity
+1. CMM Maturity Simulation: Students evaluate a fictional company’s process maturity level based on a case study.
+1. CMMI Mapping Exercise: Match each process area in CMMI to its maturity level.
+1. ISO 15504 Self-Assessment: Teams use a checklist to determine the capability level of a given process (e.g., software testing).
+
+
+### 🛠️ Tools to Use
+NA
+
+
+### 📚 Suggested Readings / Videos
+1. https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf
+1. https://en.wikiversity.org/wiki/Software_Process_Improvement_Models
+1. https://en.wikipedia.org/wiki/Personal_software_process
+1. https://en.wikipedia.org/wiki/Team_software_process
+1. https://en.wikipedia.org/wiki/Capability_Maturity_Model
+1. https://www.iso.org/home.html
+1. https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+1. https://en.wikipedia.org/wiki/ISO_9000_family
+1. https://en.wikipedia.org/wiki/ISO/IEC_15504
+1. https://en.wikipedia.org/wiki/Scrum_(software_development)
+1. https://en.wikipedia.org/wiki/Kanban_(development)
+1. https://www.gob.mx/cms/uploads/attachment/file/922687/CMMI_for_development_.pdf
+1. https://processgroup.com/CMMI-Model-Quick-Reference-Guide_Digital-1024.pdf
+1. https://www.lbsnaa.gov.in/storage/uploads/NqUQtSRWeJr2CAKe6NLhhUNRN7R82Pw4Nzx2vChk.pdf
+</file>
+
+<file path="Topic-04:-Software-Quality-Management.md">
+# Software Quality Management
+### SQM Processes, Software Quality Tasks, and SQM in Software Development Methodology
+
+---
+
+## Goal
+
+To provide students with an understanding of Software Quality Management (SQM), its processes, quality-related tasks, and how quality management activities are integrated throughout the Software Development Life Cycle (SDLC) to ensure the delivery of high-quality software products.
+
+---
+
+## 🎯 Learning Objectives
+
+Students should be able to:
+
+1. Explain the concept, objectives, and importance of Software Quality Management (SQM) in software development.
+2. Describe the key SQM processes, including Quality Planning, Quality Assurance (QA), and Quality Control (QC), and their roles in ensuring software quality.
+3. Apply software quality management practices and quality-related tasks throughout the Software Development Life Cycle (SDLC) to improve software quality and reduce defects.
+
+---
+
+## 📌 Topics to Cover
+
+### 1. Introduction to Software Quality Management (SQM)
+
+- Definition of Software Quality Management (SQM)
+- Objectives of SQM
+- Benefits of implementing SQM
+
+### 2. SQM Processes
+
+#### Quality Planning
+
+- Establishing quality objectives
+- Quality standards and procedures
+- Quality metrics
+- Quality management plan
+
+#### Quality Assurance (QA)
+
+- Process-oriented approach
+- Defect prevention
+- Quality audits
+- Process improvement
+- Compliance with standards
+
+#### Quality Control (QC)
+
+- Product-oriented approach
+- Defect detection
+- Verification and validation
+- Software testing activities
+
+### 3. Software Quality Tasks
+
+- Requirements review
+- Design review
+- Code review
+- Walkthroughs
+- Technical reviews
+- Inspections
+- Testing activities
+- Defect management
+- Configuration management
+- Quality measurement and metrics
+- Quality audits
+
+### 4. Applying SQM Throughout the SDLC
+
+#### Requirements Phase
+
+- Requirements validation
+- Requirements review
+
+#### Design Phase
+
+- Design evaluation
+- Design review
+
+#### Development Phase
+
+- Coding standards
+- Code review
+- Static analysis
+
+#### Testing Phase
+
+- Unit testing
+- Integration testing
+- System testing
+- User Acceptance Testing (UAT)
+
+#### Deployment and Maintenance Phase
+
+- Release verification
+- Defect tracking
+- Continuous improvement
+
+### 5. QA vs QC
+
+| Quality Assurance (QA) | Quality Control (QC) |
+|------------------------|---------------------|
+| Focuses on processes | Focuses on products |
+| Prevents defects | Detects defects |
+| Proactive approach | Reactive approach |
+| Audits and standards | Testing and inspections |
+
+---
+
+## 💪 Hands-on Activity
+
+### Activity: Applying Software Quality Management in a Software Project
+
+#### Identifying SQM Processes
+
+Students analyze a given software project scenario and identify:
+
+- Quality Planning activities
+- Quality Assurance activities
+- Quality Control activities
+
+---
+
+## 🛠️ Tools to Use
+
+- Jira
+
+---
+
+## 📚 Suggested Readings / Videos
+
+1. Atlassian Jira Guide  
+  https://www.atlassian.com/software/jira/guides
+</file>
+
+<file path="Topic-05:-Software-Quality-Plan.md">
+# Software Quality Plan (SQP)
+
+---
+
+## Goal
+
+To provide students with an understanding of the Software Quality Plan (SQP), its key components, and its role in ensuring software quality throughout a project. Students will also learn the differences between a Quality Plan and a Project Plan and how both contribute to successful software development.
+
+---
+
+## 🎯 Learning Objectives
+
+Students should be able to:
+
+1. Describe key components of the Software Quality Plan (SQP).
+2. Differentiate between a Quality Plan and a Project Plan.
+
+---
+
+## 📌 Topics to Cover
+
+### 1. Introduction to Software Quality Plan (SQP)
+
+- Definition of Software Quality Plan
+- Purpose of a Software Quality Plan
+- Importance of quality planning in software projects
+
+### 2. Key Components of a Software Quality Plan
+
+#### Quality Goals
+
+- Definition and purpose
+- Examples of quality goals
+
+#### Quality Objectives
+
+- Definition and purpose
+- SMART quality objectives
+
+#### Quality Standards
+
+- Internal and external quality standards
+- Industry standards (ISO 9001, ISO/IEC 25010)
+
+#### Quality Assurance Activities
+
+- Process reviews
+- Audits
+- Compliance checks
+
+#### Quality Control Activities
+
+- Testing activities
+- Inspections
+- Defect management
+
+#### Roles and Responsibilities
+
+- Project Manager
+- Quality Assurance Team
+- Developers
+- Testers
+
+#### Quality Metrics
+
+- Defect Density
+- Test Coverage
+- Customer Satisfaction
+
+### 3. Quality Plan vs Project Plan
+
+#### Project Plan
+
+- Project scope
+- Schedule and milestones
+- Budget and resources
+- Risk management
+
+#### Quality Plan
+
+- Quality goals
+- Quality objectives
+- Quality activities
+- Quality standards
+- Quality metrics
+
+#### Comparison Between Quality Plan and Project Plan
+
+| Aspect | Project Plan | Quality Plan |
+|----------|----------|----------|
+| Focus | Project execution | Software quality |
+| Purpose | Deliver project successfully | Ensure quality requirements are met |
+| Contents | Scope, schedule, budget, resources | Quality goals, standards, metrics, QA/QC activities |
+| Responsibility | Project Manager | QA Team / Project Team |
+| Success Measure | Project completion | Product quality achievement |
+
+### 4. Importance of Quality Planning
+
+- Reducing defects
+- Improving customer satisfaction
+- Supporting continuous improvement
+- Ensuring compliance with standards
+
+---
+
+## 💪 Hands-on Activity
+
+### Activity: Developing a Simple Software Quality Plan
+
+#### Identify SQP Components
+
+Given a software project case study (e.g., Library Management System), students identify:
+
+- Quality goals
+- Quality objectives
+- Quality standards
+- QA activities
+- QC activities
+
+---
+
+## 🛠️ Tools to Use
+
+- Jira
+
+---
+
+## 📚 Suggested Readings / Videos
+
+1. Introduction to Software Quality Planning
+2. Software Quality Plan Explained
+3. Quality Plan vs Project Plan
+</file>
+
+<file path="Topic-06:-Software-Quality-Assurance.md">
+### Goal
+To equip students with a solid understanding of Software Quality Assurance concepts, processes, and practices, enabling them to plan, monitor, and evaluate software quality activities throughout the software development lifecycle.
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Explain the role and importance of Software Quality Assurance (SQA) in software development
+2. Prepare a basic Software Quality Assurance (SQA) Plan
+3. Distinguish between different types of audits in software projects
+4. Describe audit roles and responsibilities.
+5. Explain the audit process and standard procedures used in SQA
+
+
+### 📌 Topics to Cover                               
+1. Introduction to Software Quality Assurance
+   - Definition of SQA
+   - Difference between SQA, QC, and Testing
+   - Importance of SQA in SDLC
+
+2. Quality Tasks in Software Projects
+   - Process monitoring
+   - Standards compliance
+   - Documentation review
+   - Configuration management
+   - Risk identification related to quality
+
+3. Software Quality Goals
+   - Functional correctness
+   - Reliability
+   - Maintainability
+   - Usability
+   - Performance
+   - Compliance with standards (e.g., ISO/IEC)
+
+4. Software Quality Assurance (SQA) Plan
+   - Purpose of an SQA Plan
+   - Typical contents:
+   - Quality objectives
+   - Standards and procedures
+   - Roles and responsibilities
+   - Review and audit schedules
+   - Metrics and reporting
+
+5. Audit Types in Software Quality
+   - Process Audit
+   - Product Audit
+   - System Audit
+   - Internal vs External Audit
+
+6. Audit Roles and Responsibilities
+   - Auditor
+   - Lead Auditor
+   - Auditee (project team)
+   - Management responsibilities
+
+7. Audit Process and Procedures
+   - Audit planning
+   - Audit execution
+   - Evidence collection
+   - Audit reporting
+   - Corrective and preventive actions
+   - Follow-up activities
+
+### 💪 Hands-on Activity
+1. Activity 1: Create a Mini SQA Plan (Group Work)
+1. Activity 2: Mock Software Audit (Role Play)
+
+
+### 🛠️ Tools to Use
+1. JIRA – for issue tracking and quality tasks
+1. GitHub – Version control and audit trail
+
+
+### 📚 Suggested Readings / Videos
+1. Introduction to Software Quality Assurance
+1. Software Audit Explained
+1. SQA vs QC vs Testing
+</file>
+
+<file path="Topic-07:-Software-Quality-Control.md">
+# Software Quality Control
+
+---
+
+## Definition
+Software Quality Control is the set of activities that focus on detecting defects in the software product through structured testing, inspections, and reviews to ensure it meets quality requirements.
+
+---
+
+## Difference Between Quality Control and Quality Assurance
+| **Quality Control (QC)**       | **Quality Assurance (QA)**                   |
+| ------------------------------ | -------------------------------------------- |
+| Product-focused                | Process-focused                              |
+| Detects defects                | Prevents defects                             |
+| Conducted after implementation | Conducted throughout the development process |
+| Testing, inspections, reviews  | Process definition, standards, audits        |
+
+---
+
+## Goal
+
+To provide students with an understanding of Software Quality Control (SQC), its importance in ensuring software quality throughout the software development lifecycle, the use of quality tools for defect analysis and process improvement, and the application of the Reliability model for analyzing software defect distribution and reliability growth.
+
+---
+
+## 🎯 Learning Objectives
+
+Students should be able to:
+
+1. Explain the concept of Software Quality Control and its role in the software lifecycle.
+2. Identify and apply basic quality tools for defect analysis and process improvement.
+3. Interpret and apply the Reliability model in software defect distribution.
+
+---
+
+## 📌 Topics to Cover
+
+### 1. Introduction to Software Quality Control (SQC)
+
+- Definition of Software Quality Control
+- Objectives of Software Quality Control
+- Importance of Software Quality Control
+- Quality Assurance (QA) vs Quality Control (QC)
+- Role of QC in the Software Development Life Cycle (SDLC)
+
+### 2. Software Quality Control Activities
+
+#### Reviews
+
+- Walkthrough
+- Technical Review
+- Inspection
+- Peer Review
+
+#### Testing Activities
+
+- Unit Testing
+- Integration Testing
+- System Testing
+- User Acceptance Testing (UAT)
+
+#### Defect Management
+
+- Defect identification
+- Defect reporting
+- Defect tracking
+- Defect resolution
+
+### 3. Basic Quality Tools
+
+#### Check Sheet
+
+- Collecting and organizing defect data
+
+#### Pareto Chart
+
+- Identifying the most significant defect categories
+- 80/20 Principle
+
+#### Cause-and-Effect Diagram (Fishbone/Ishikawa Diagram)
+
+- Root cause analysis
+
+#### Histogram
+
+- Analyzing defect frequency distribution
+
+#### Scatter Diagram
+
+- Identifying relationships between variables
+
+#### Control Chart
+
+- Monitoring process stability and variation
+
+#### Flowchart
+
+- Visualizing software processes and workflows
+
+### 4. Defect Analysis and Process Improvement
+
+- Defect classification
+- Root cause analysis
+- Defect prevention strategies
+- Continuous process improvement
+
+### 5. Reliability Growth Models
+- Definition of software reliability
+- Reliability versus quality
+- Importance of reliability measurement
+
+
+### 6. Using Reliability Trends in Quality Management
+
+- Identifying defect discovery rates
+- Evaluating software stability
+- Planning software release decisions
+- Improving testing effectiveness
+
+---
+
+## 💪 Hands-on Activity
+
+### Activity: Defect Analysis and Reliability Growth Assessment
+
+#### Defect Trend Analysis
+
+Students analyze weekly defect data and:
+
+- Calculate the number of defects discovered per week.
+- Identify trends in defect occurrence.
+- Discuss possible reasons for the trends.
+
+---
+
+## 🛠️ Tools to Use
+
+### Defect Tracking Tools
+
+- Jira
+- GitHub Issues
+
+---
+
+## 📚 Suggested Readings / Videos
+</file>
+
+<file path="Topic-08:-Software-Metrics-and-Measurement.md">
+### Goal
+
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Explain the importance of software metrics and measurement in quality management.
+1. Apply software process measurement to monitor and improve development activities.
+1. Apply software product measurement to assess quality attributes such as complexity and maintainability.
+1. Differentiate between process metrics and product metrics.
+1. Identify common metrics used to evaluate software development performance.
+1. Apply the Goal Question Metric (GQM) approach to design measurement frameworks.
+
+
+### 📌 Topics to Cover                               
+
+
+
+### 💪 Hands-on Activity
+
+
+
+### 🛠️ Tools to Use
+
+
+
+### 📚 Suggested Readings / Videos
+</file>
+
+<file path="Topic-09:-Review-and-Inspections.md">
+### Goal
+
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Explain the purpose and importance of reviews and inspections in software quality management.
+1. Describe the review procedure and roles involved.
+1. Compare informal vs formal peer reviews.
+1. Differentiate between peer review, walkthrough, inspection, and technical review.
+
+
+### 📌 Topics to Cover                               
+
+
+
+### 💪 Hands-on Activity
+
+
+
+### 🛠️ Tools to Use
+
+
+
+### 📚 Suggested Readings / Videos
+</file>
+
+<file path="Topic-10:-Quality-Management-System.md">
+### Goal
+
+
+
+### 🎯 Learning Objectives
+Students should be able to:
+1. Explain the concept and importance of a Quality Management System (QMS) in software development.
+1. Identify and describe the key elements of QMS.
+1. Explain how the Rayleigh model framework supports quality planning and defect prediction.
+1. Describe reliability growth models and their role in continuous quality improvement.
+1. Apply complexity metrics to evaluate software quality and maintainability.
+1. Analyse customer satisfaction data to improve software quality.
+1. Relate QMS practices to real-world standards such as ISO 9001 and ISO/IEC 25010.
+
+
+
+### 📌 Topics to Cover                               
+
+
+
+### 💪 Hands-on Activity
+
+
+
+### 🛠️ Tools to Use
+
+
+
+### 📚 Suggested Readings / Videos
+</file>
+
+<file path="YourNote-1001:-QMS.md">
+## Introduction
+A Quality Management System (QMS) is a structured framework of processes, standards, procedures, and responsibilities used to ensure software meets customer expectations, complies with standards, and achieves consistent quality.
+>A system that defines how an organisation plans, assures, controls, and improves quality.
+
+## Purpose of Quality Management System (QMS)
+A QMS aims to:
+- Ensure consistent quality in software development
+- Define processes, standards, and responsibilities
+- Improve customer satisfaction
+- Minimize defects, rework, and cost
+- Increase team efficiency and predictability
+- Support continuous improvement (Kaizen)
+
+## QMS in Software vs Traditional Manufacturing
+1. Software QMS emphasises:
+   - Process maturity (CMMI, SPICE/ISO 15504)
+   - Defect prevention and detection techniques
+   - Agile quality practices (pair programming, CI/CD)
+   - Testing strategies (unit, integration, system)
+   - Documentation and traceability
+
+2. Manufacturing QMS focuses more on physical product consistency.
+
+## Standards Related to QMS
+1. ISO 9001
+   - General QMS standard used across industries.
+
+2. ISO/IEC 25010
+   - Defines software product quality characteristics.
+
+3. ISO/IEC 15504 (SPICE)
+   - Evaluates process capability and maturity.
+
+4. CMMI
+   - Capability Maturity Model for improving development processes.
+
+5. ISO/IEC 12207
+   - Software lifecycle processes.
+
+>QMS integrates these standards to form a quality framework.
+
+## Tools and Techniques in QMS
+- Reviews (walkthroughs, inspections, technical reviews)
+- Testing & verification
+- Metrics (defect density, DRE, reliability metrics)
+- Risk management
+- Configuration management tools (Git, Jenkins)
+- CI/CD pipelines
+- Audits and compliance checks
+
+## QMS Metrics
+Quality management relies on measurable indicators, including:
+- Defect density
+- Defect removal efficiency (DRE)
+- MTTF, MTTR
+- Code coverage
+- Review effectiveness
+- Test pass/fail ratio
+- Process compliance ratio
+- Customer satisfaction metrics
+
+## Benefits of Implementing QMS
+Expected outcomes:
+- Higher-quality software
+- Fewer defects early and late
+- Reduced development cost and time
+- Increased customer satisfaction
+- Predictable, repeatable processes
+- Improved team communication
+- Better risk and change management
+- Support for audits, certifications, and contracts
+
+## Common QMS Problems
+- Over-documentation
+- Lack of team training
+- Process followed only for audits
+- No continuous improvement
+- Poor integration with Agile
+- Metrics misused to punish developers
+
+## References:
+1. https://en.wikipedia.org/wiki/Quality_management_system
+</file>
+
+<file path="YourNote-1002:-Elements-of-QMS.md">
+# Key Elements of a Quality Management System (QMS)
+
+## 1. Quality Policy
+
+### Definition
+
+A formal statement from top management that expresses the organization's commitment to quality.
+
+### Purpose
+
+- Provides direction for quality activities
+- Establishes quality culture
+- Aligns employees with organizational goals
+
+### Example
+
+> "We are committed to delivering high-quality software solutions that meet customer requirements and support continuous improvement."
+
+---
+
+## 2. Quality Objectives
+
+### Definition
+
+Specific and measurable goals established to achieve the quality policy.
+
+### Examples
+
+- Customer satisfaction ≥ 90%
+- Defect density < 2 defects per KLOC
+- System availability ≥ 99%
+- On-time delivery ≥ 95%
+
+### Characteristics
+
+Quality objectives should be:
+
+- Specific
+- Measurable
+- Achievable
+- Relevant
+- Time-bound
+
+---
+
+## 3. Organizational Structure and Responsibilities
+
+### Definition
+
+Defines roles, responsibilities, and authority for quality-related activities.
+
+### Example
+
+| Role | Responsibility |
+|--------|---------------|
+| Top Management | Quality leadership |
+| Project Manager | Project quality management |
+| QA Manager | Quality assurance activities |
+| Developers | Follow quality standards |
+| Testers | Perform testing activities |
+
+### Purpose
+
+- Ensure accountability
+- Clarify responsibilities
+- Improve coordination
+
+---
+
+## 4. Processes and Procedures
+
+### Definition
+
+Documented activities that define how work should be performed.
+
+### Examples
+
+- Requirements Management Process
+- Software Development Process
+- Testing Process
+- Change Management Process
+- Configuration Management Process
+
+### Purpose
+
+- Standardize work practices
+- Improve consistency
+- Reduce process variation
+
+---
+
+## 5. Resource Management
+
+### Definition
+
+Management of human, technical, financial, and infrastructure resources required to achieve quality objectives.
+
+### Examples
+
+#### Human Resources
+
+- Skilled developers
+- Test engineers
+- QA personnel
+
+#### Technical Resources
+
+- Development tools
+- Testing tools
+- Version control systems
+
+#### Infrastructure
+
+- Servers
+- Networks
+- Development environments
+
+---
+
+## 6. Documentation Control
+
+### Definition
+
+Management and control of quality-related documents and records.
+
+### Examples
+
+- Quality Manual
+- Software Quality Plan
+- Test Reports
+- Audit Reports
+- Procedures and Guidelines
+
+### Purpose
+
+- Maintain consistency
+- Ensure traceability
+- Support audits
+
+---
+
+## 7. Quality Assurance (QA)
+
+### Definition
+
+Activities designed to ensure that processes are followed correctly.
+
+### Examples
+
+- Process audits
+- Compliance reviews
+- Standards enforcement
+- Training programs
+
+### Purpose
+
+- Prevent defects
+- Improve process quality
+
+### Focus
+
+**Process-Oriented**
+
+---
+
+## 8. Quality Control (QC)
+
+### Definition
+
+Activities used to verify that products meet quality requirements.
+
+### Examples
+
+- Testing
+- Inspections
+- Code Reviews
+- Walkthroughs
+
+### Purpose
+
+- Detect defects
+- Verify product quality
+
+### Focus
+
+**Product-Oriented**
+
+---
+
+## 9. Measurement and Analysis
+
+### Definition
+
+Collection and analysis of quality-related data.
+
+### Examples
+
+| Metric | Purpose |
+|----------|---------|
+| Defect Density | Measure product quality |
+| Test Coverage | Measure testing effectiveness |
+| Customer Satisfaction | Measure service quality |
+| Productivity | Measure process efficiency |
+
+### Purpose
+
+- Monitor performance
+- Support decision-making
+- Identify improvement opportunities
+
+---
+
+## 10. Continuous Improvement
+
+### Definition
+
+Ongoing efforts to improve products, services, and processes.
+
+### Activities
+
+- Root Cause Analysis
+- Corrective Actions
+- Preventive Actions
+- Process Improvement Initiatives
+- Lessons Learned
+
+### Models
+
+- PDCA (Plan-Do-Check-Act)
+- CMMI
+- Six Sigma
+- Kaizen
+
+---
+
+## 11. Customer Focus
+
+### Definition
+
+Ensuring that customer requirements and expectations are understood and fulfilled.
+
+### Activities
+
+- Requirement gathering
+- Customer feedback collection
+- Satisfaction surveys
+- Complaint management
+
+### Purpose
+
+- Increase customer satisfaction
+- Improve product quality
+
+---
+
+## 12. Leadership and Management Commitment
+
+### Definition
+
+Active involvement of top management in supporting quality initiatives.
+
+### Responsibilities
+
+- Establish quality policy
+- Provide resources
+- Set quality objectives
+- Promote quality culture
+
+### Importance
+
+Without management commitment, a QMS is unlikely to succeed.
+
+---
+
+# QMS Components Summary
+
+| No | Element |
+|-----|----------|
+| 1 | Quality Policy |
+| 2 | Quality Objectives |
+| 3 | Organizational Structure and Responsibilities |
+| 4 | Processes and Procedures |
+| 5 | Resource Management |
+| 6 | Documentation Control |
+| 7 | Quality Assurance (QA) |
+| 8 | Quality Control (QC) |
+| 9 | Measurement and Analysis |
+| 10 | Continuous Improvement |
+| 11 | Customer Focus |
+| 12 | Leadership and Management Commitment |
+</file>
+
+<file path="YourNote-101:-Software-Quality-Characteristics.md">
+## What Are Software Quality Characteristics?
+Software Quality Characteristics describe how good a software product is from the perspectives of users, developers, and stakeholders — not just whether it works, but how well it works.
+
+
+## The 8 Core Software Quality Characteristics (ISO/IEC 25010)
+https://iso25000.com/en/iso-25000-standards/iso-25010
+
+#### 1. Functional Suitability
+Does the software do what it is supposed to do?
+- Functional completeness
+- Functional correctness
+- Functional appropriateness
+
+📌 Example:
+An e-commerce system correctly calculates total price, tax, and discounts.
+
+
+#### 2. Performance Efficiency
+How fast and resource-efficient is the system?
+- Response time
+- Throughput
+- Resource utilization
+
+📌 Example:
+API responds within 2 seconds for 10,000 users.
+
+
+#### 3. Compatibility
+Can the software work with other systems?
+- Co-existence
+- Interoperability
+
+📌 Example:
+Your Spring Boot API integrates smoothly with an Angular frontend and third-party payment gateway.
+
+
+#### 4. Usability
+How easy is the software to learn and use?
+- Learnability
+- Operability
+- User error protection
+- Accessibility
+
+📌 Example:
+First-time users can submit a paper in a CMS without training.
+
+
+#### 5. Reliability
+Does the system work consistently over time?
+- Maturity
+- Availability
+- Fault tolerance
+- Recoverability
+
+📌 Example:
+System auto-recovers after server crash without data loss.
+
+
+#### 6. Security
+How well does the system protect data and access?
+- Confidentiality
+- Integrity
+- Accountability
+- Authenticity
+
+📌 Example:
+JWT authentication, role-based access (Admin, Reviewer, Author).
+
+
+#### 7. Maintainability
+How easy is it to modify and fix the system?
+- Modularity
+- Reusability
+- Analysability
+- Modifiability
+- Testability
+
+📌 Example:
+Bug fix in one module does not break the entire system.
+
+
+#### 8. Portability
+How easily can the software move across environments?
+- Adaptability
+- Installability
+- Replaceability
+
+📌 Example:
+Application runs the same on local machine, Docker, and cloud.
+
+
+#### Why These Characteristics Matter?
+| Stakeholder   | Cares Most About                    |
+| ------------- | ----------------------------------- |
+| Users         | Usability, Reliability, Performance |
+| Developers    | Maintainability, Testability        |
+| Security Team | Security                            |
+| Management    | Reliability, Cost efficiency        |
+| DevOps        | Portability, Performance            |
+
+
+#### Mapping to SQA Activities
+| Quality Characteristic | SQA Activity                            |
+| ---------------------- | --------------------------------------- |
+| Functional Suitability | Requirement reviews, functional testing |
+| Performance Efficiency | Load & stress testing                   |
+| Usability              | User testing, UI reviews                |
+| Reliability            | Fault injection, recovery testing       |
+| Security               | Penetration testing, access control     |
+| Maintainability        | Code reviews, unit tests                |
+| Portability            | Dockerization, CI/CD pipelines          |
+</file>
+
+<file path="YourNote-201:-McCall-Model.md">
+## What Is the McCall Software Quality Model?
+- The McCall Model (1977) is one of the earliest software quality models. It was designed to bridge the gap between users and developers by translating quality concerns into measurable technical factors.
+- The McCall software quality model classifies software quality into product operation, revision, and transition factors to systematically evaluate quality attributes from both user and developer perspectives.
+
+
+## Structure of the McCall Model (11 Factors)
+
+### 1. Product Operation Factors (5 Factors)
+How well the software works for users during operation
+| Factor          | Meaning                                  |
+| --------------- | ---------------------------------------- |
+| **Correctness** | Meets requirements and specifications    |
+| **Reliability** | Performs consistently without failure    |
+| **Efficiency**  | Uses resources (CPU, memory) effectively |
+| **Integrity**   | Protects data from unauthorized access   |
+| **Usability**   | Easy to learn and use                    |
+📌 User-centered view
+
+
+### 2. Product Revision Factors (3 Factors)
+How easy it is to change and maintain the software
+| Factor              | Meaning                      |
+| ------------------- | ---------------------------- |
+| **Maintainability** | Easy to fix defects          |
+| **Flexibility**     | Easy to modify for new needs |
+| **Testability**     | Easy to test and validate    |
+📌 Developer & maintenance view
+
+
+### 3. Product Transition Factors (3 Factors)
+How easily software adapts to new environments
+| Factor               | Meaning                     |
+| -------------------- | --------------------------- |
+| **Portability**      | Runs on different platforms |
+| **Reusability**      | Components can be reused    |
+| **Interoperability** | Works with other systems    |
+📌 Long-term & organizational view
+
+
+## Why McCall Model Is Important?
+| Reason                     | Explanation                       |
+| -------------------------- | --------------------------------- |
+| First formal quality model | Foundation for later models       |
+| Developer-friendly         | Easy to understand                |
+| Measurement-oriented       | Encourages metrics                |
+| Still exam-relevant        | Frequently asked in theory papers |
+
+
+## Limitations of the McCall Model
+| Limitation                 | Explanation                                |
+| -------------------------- | ------------------------------------------ |
+| Outdated                   | Created before modern web & mobile systems |
+| No explicit security depth | Compared to modern standards               |
+| No process focus           | Product-based only                         |
+| No usability accessibility | Lacks modern UX concepts                   |
+
+
+## McCall vs Modern Models
+| Aspect          | McCall Model    | ISO/IEC 25010             |
+| --------------- | --------------- | ------------------------- |
+| Year            | 1977            | 2011                      |
+| Focus           | Product quality | Product + user experience |
+| Security        | Integrity only  | Full security model       |
+| Maintainability | Yes             | Yes (more detailed)       |
+| Relevance       | Conceptual      | Industry standard         |
+</file>
+
+<file path="YourNote-301:-CMMI.md">
+## 1. What is CMMI?
+
+**CMMI (Capability Maturity Model Integration)** is a framework used to improve an organization's processes, quality, productivity, and project management practices. CMMI was developed by the Software Engineering Institute (SEI) at Carnegie Mellon University.
+
+---
+
+## 2. Why is CMMI Important?
+
+Organizations use CMMI to:
+
+- Improve software quality
+- Deliver projects on time
+- Reduce development costs
+- Increase process maturity
+- Support continuous improvement
+
+---
+
+## 3. CMMI Maturity Levels
+
+CMMI defines **5 Maturity Levels**.
+
+### Level 1 – Initial
+
+#### Characteristics
+
+- Processes are ad hoc and chaotic
+- Success depends on individual effort
+- No standard procedures
+
+#### Example
+
+- Developers work differently on every project
+- Documentation is inconsistent
+
+---
+
+### Level 2 – Managed
+
+#### Characteristics
+
+- Basic project management practices exist
+- Requirements are tracked
+- Project planning is performed
+
+#### Example
+
+- Project schedules are created
+- Risks are identified
+- Progress is monitored
+
+---
+
+### Level 3 – Defined
+
+#### Characteristics
+
+- Organization-wide standard processes
+- Processes are documented and standardized
+- Best practices are shared
+
+#### Example
+
+- Every project follows the same development methodology
+- Standard templates are used
+
+---
+
+### Level 4 – Quantitatively Managed
+
+#### Characteristics
+
+- Processes are measured using statistical techniques
+- Performance is predictable
+
+#### Example
+
+- Defect rates are analyzed
+- Productivity metrics are monitored
+- Quality goals are measured
+
+---
+
+### Level 5 – Optimizing
+
+#### Characteristics
+
+- Continuous process improvement
+- Innovation and defect prevention
+- Root cause analysis
+
+#### Example
+
+- Continuous improvement programs
+- Automation initiatives
+- Lessons learned incorporated into processes
+
+---
+
+## 4. CMMI Maturity Level Summary
+
+| Level | Name | Focus |
+|---------|---------|---------|
+| 1 | Initial | Ad hoc processes |
+| 2 | Managed | Basic project management |
+| 3 | Defined | Standardized organizational processes |
+| 4 | Quantitatively Managed | Metrics and statistical control |
+| 5 | Optimizing | Continuous improvement |
+
+---
+
+## 5. CMMI vs ISO 9001
+
+| Aspect | CMMI | ISO 9001 |
+|----------|----------|----------|
+| Purpose | Process improvement | Quality management system |
+| Focus | Software and systems processes | Organization-wide quality |
+| Assessment | Maturity levels | Certification |
+| Levels | 1–5 | No maturity levels |
+| Goal | Process capability improvement | Compliance with standards |
+
+---
+
+## 6. CMMI and Software Quality Management
+
+CMMI supports Software Quality Management through:
+
+### Quality Assurance
+
+- Process audits
+- Compliance checks
+- Process improvement
+
+### Quality Control
+
+- Defect tracking
+- Testing
+- Reviews and inspections
+
+### Measurement
+
+- Defect density
+- Productivity
+- Customer satisfaction
+- Schedule performance
+
+## References:
+1. https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration
+</file>
+
+<file path="YourNote-302:-CMM-vs-CMMI.md">
+# CMM vs CMMI
+
+| Aspect | CMM (Capability Maturity Model) | CMMI (Capability Maturity Model Integration) |
+|----------|----------|----------|
+| Full Name | Capability Maturity Model | Capability Maturity Model Integration |
+| Developed By | Software Engineering Institute (SEI) | Software Engineering Institute (SEI) |
+| Purpose | Improve software development processes | Improve organizational processes across multiple disciplines |
+| Scope | Focuses mainly on software development | Covers software, systems engineering, services, supplier management, and development |
+| Process Areas | Separate models for different domains | Integrated framework combining multiple models |
+| Flexibility | Less flexible | More flexible and comprehensive |
+| Process Improvement Approach | Software-specific improvement | Enterprise-wide process improvement |
+| Representation | Staged representation only | Staged and Continuous representations |
+| Capability Levels | Not emphasized | Supports Capability Levels (0–5) |
+| Maturity Levels | 1–5 | 1–5 |
+| Integration | Limited integration among disciplines | Integrates multiple disciplines into one framework |
+| Current Status | Obsolete / Replaced by CMMI | Widely adopted and actively maintained |
+| Industry Adoption | Mostly historical use | Used globally across many industries |
+| Focus | Software process maturity | Organizational capability and performance improvement |
+| Assessment Result | CMM Maturity Level | CMMI Maturity Level or Capability Level |
+
+---
+
+# Maturity Levels Comparison
+
+| Level | CMM | CMMI |
+|---------|---------|---------|
+| Level 1 | Initial | Initial |
+| Level 2 | Repeatable | Managed |
+| Level 3 | Defined | Defined |
+| Level 4 | Managed | Quantitatively Managed |
+| Level 5 | Optimizing | Optimizing |
+
+---
+
+# Key Improvements of CMMI over CMM
+
+| CMM Limitation | CMMI Improvement |
+|----------------|------------------|
+| Focuses mainly on software engineering | Supports multiple disciplines |
+| Separate models for different domains | Integrated framework |
+| Limited process integration | Organization-wide integration |
+| Less emphasis on quantitative management | Strong quantitative process management |
+| Less flexible implementation | Supports staged and continuous approaches |
+| Difficult to coordinate across departments | Better enterprise-wide coordination |
+
+---
+
+# Advantages of CMM
+
+### Strengths
+
+- Simple and easy to understand
+- Focused on software development
+- Established foundation for process improvement
+- Introduced maturity level concept
+
+### Weaknesses
+
+- Limited scope
+- Separate models for different domains
+- Difficult to integrate with other business processes
+- Replaced by CMMI
+
+---
+
+# Advantages of CMMI
+
+### Strengths
+
+- Comprehensive framework
+- Supports multiple industries
+- Integrates various process improvement models
+- Supports continuous improvement
+- Better risk management
+- Improved quality and productivity
+- Strong measurement and analytics support
+
+### Weaknesses
+
+- More complex to implement
+- Requires organizational commitment
+- Higher implementation cost
+
+---
+</file>
+
+<file path="YourNote-401:-SQM-Process.md">
+# 1. SQM Process
+
+Software Quality Management consists of three major processes:
+
+```text
+Software Quality Management
+│
+├── Quality Planning
+├── Quality Assurance (QA)
+└── Quality Control (QC)
+```
+</file>
+
+<file path="YourNote-402:-SQA-in-SDLC.md">
+## Introduction
+Software Quality Assurance (SQA) ensures that quality is built into every phase of the Software Development Lifecycle (SDLC).
+It includes processes, standards, and activities that guarantee the software is developed correctly and meets customer expectations.
+>SQA ensures “quality by process,” while QC ensures “quality by testing”.
+
+## Why SQA Is Integrated Into Software Development Methodology?
+SQA must be built into the SDLC to:
+- Prevent defects (not just find them)
+- Ensure consistency and adherence to standards
+- Improve process reliability
+- Reduce project risks
+- Increase customer confidence
+- Support compliance (ISO, CMMI, audits)
+- Ensure traceability from requirements → release
+
+## SQA Activities Across the SDLC
+1. Requirements Phase
+   - SQA Activities:
+     - Requirements review
+     - Validation of completeness, consistency, clarity
+     - Standards for documenting requirements
+     - Traceability matrix starts here
+   - Purpose: Reduce requirement defects early.
+
+2. Design Phase
+   - SQA Activities:
+     - Architecture reviews
+     - Design walkthroughs & technical reviews
+     - Compliance with design standards
+     - Security and performance considerations
+   - Purpose: Ensure sound technical structure.
+
+3. Coding / Development Phase
+   - SQA Activities:
+     - Coding standards
+     - Static code analysis (SonarQube)
+     - Peer reviews/code inspections
+     - Version control and branching policies
+   - Purpose: Ensure maintainable, clean, reliable code.
+
+4. Testing Phase
+   - SQA Activities:
+     - Test planning & test case reviews
+     - Coverage analysis
+     - Defect management
+     - Ensure test process follows standards (IEEE 829 / ISO guidelines)
+   - Purpose: Verify functionality, reliability, and performance.
+
+5. Deployment Phase
+   - SQA Activities:
+     - Release readiness review
+     - Configuration management audits
+     - UAT compliance checks
+     - Documentation verification
+   - Purpose: Ensure stable, controlled deployment.
+
+6. Maintenance Phase
+   - SQA Activities:
+     - Change control
+     - Regression testing
+     - Impact analysis
+     - Post-implementation review
+   - Purpose: Maintain reliability and avoid introducing new defects.
+
+
+## SQA in Agile Methodology
+Agile integrates SQA continuously. 
+- Key Agile SQA practices:
+  - Definition of Done (DoD)
+  - Continuous Integration / Continuous Delivery (CI/CD)
+  - Automated testing
+  - Pair programming
+  - Peer code reviews
+  - Sprint reviews & retrospectives
+  - Story refinement and acceptance criteria
+  - Test-driven development (TDD)
+- Purpose: Quality is built into every sprint.
+
+## SQA in Waterfall Methodology
+- Waterfall uses formal SQA checkpoints:
+  - Requirement reviews
+  - Design inspections
+  - Test document audits
+  - Quality gates between phases
+- Purpose: Ensures quality before moving to the next phase.
+
+## Tools Supporting SQA in Development Methodology
+Common tools:
+- Jira / Azure DevOps (process tracking)
+- GitHub / GitLab (code reviews, version control)
+- Jenkins / GitHub Actions (CI)
+- SonarQube (static code quality)
+- Selenium / JMeter (test automation)
+
+## Metrics Used to Monitor SQA Across SDLC
+These metrics help assess quality at different stages:
+- Defect density
+- Requirements stability index
+- Review effectiveness
+- Code complexity
+- Test coverage
+- MTTR / MTTF
+- Build success rate (CI/CD)
+- Defect leakage rate
+
+## Benefits of Integrating SQA Into Methodology
+- Early defect detection → lower cost
+- Better development discipline
+- Higher product reliability
+- Repeatable and predictable processes
+- Compliance with standards (ISO/IEC, CMMI, IEEE)
+- Improved communication & documentation
+- Supports DevOps and continuous quality
+</file>
+
+<file path="YourNote-404:-Important-Term.md">
+## 1. EPIC (BIG BUSINESS PROCESS)
+Represents a major module or workflow in AgroKedah
+
+Examples:
+- Aid Application
+- Investigation & Verification
+- Approval & Decision
+- Monitoring
+>These reflect the `real system workflow`
+
+
+## 2. STORY (USER REQUIREMENT)
+What the user wants to do
+
+Written from the perspective of:
+- Farmer
+- Officer
+- Admin
+
+Examples:
+1. “As a farmer, I want to submit an aid application so that I can receive assistance”
+1. “As an officer, I want to review applications so that I can conduct investigation”
+>Focus = user functionality
+
+
+## 3. TASK (ACTUAL WORK)
+Technical or operational work required to complete a story
+
+Examples:
+
+For the story: `Submit application`
+1. Design application form
+1. Create submission API
+1. Validate input
+1. Store data in database
+>Focus = implementation
+
+
+## 4. BUG (PROBLEM / ERROR)
+Something that is not working correctly
+
+Examples:
+- Application cannot be submitted
+- Document upload fails
+- Approval status is incorrect
+- Mobile app crashes
+
+### Typically found during:
+1. Testing (SQA)
+2. Real usage (QC)
+
+
+## COMPARISON
+
+| Type  | Focus       | AgroKedah Example          |
+| ----- | ----------- | -------------------------- |
+| Epic  | Big process | Aid Application            |
+| Story | User need   | Farmer submits application |
+| Task  | Work to do  | Create submission API      |
+| Bug   | Error       | Submit button not working  |
+
+## Relationship
+```
+Epic
+ ├── Story (user features)
+ │     ├── Task (technical work)
+ │     └── Bug (issues found)
+```
+
+# Sub-task (AgroKedah Example)
+### Story:
+Farmer submits aid application
+
+### Task:
+Create submission API
+
+### Sub-tasks:
+1. Define API endpoint
+1. Write controller method
+1. Validate input data
+1. Connect to database
+1. Test API using Postman
+
+### Hierarchy
+
+```
+Epic
+ ├── Story
+ │     ├── Task
+ │     │     ├── Sub-task
+ │     │     └── Sub-task
+ │     └── Task
+ ```
+
+### When to Use Sub-task
+1. Task is too big
+1. Work needs to be split among team members
+1. You want detailed tracking
+
+### When NOT to Use
+1. Don’t create sub-task for everything
+1. Avoid too many tiny items (over-fragmentation)
+</file>
+
+<file path="YourNote-405:-Where-to-implement-SQA-&-QC.md">
+## Option 1: Only Epic for SQA & QC
+
+#### Problem:
+1. QA becomes separate from development
+1. Developers may ignore quality
+1. Hard to link testing to actual features
+
+## Option 2: Only Task/Sub-task
+
+#### Problem:
+1. No big picture of quality
+2. Difficult for:
+   - Reporting
+   - Audit
+
+
+## BEST PRACTICE
+### 1. Create SQA & QC as Epics
+
+Examples:
+- Testing & QA
+- Code Review
+- Defect Management
+- Data Quality Control
+
+Purpose:
+1. High-level planning
+2. Reporting
+
+
+### 2. ALSO Embed SQA/QC in Development Work
+This ensures, Quality is built-in, not separate.
+
+Example (AgroKedah)
+```
+Epic: Permohonan Bantuan
+ ├── Story: Farmer submits application
+ │     ├── Task: Create API
+ │     │     ├── Sub-task: Write unit test   ← SQA
+ │     │     ├── Sub-task: Code review       ← SQA
+ │     │     └── Sub-task: Validate data     ← QC
+ │     └── Bug: Submission fails
+```
+
+## Comparison
+| Approach                 | Suitable?    | Why             |
+| ------------------------ | ------------ | --------------- |
+| Only Epic                | ❌ Not enough | Too high-level  |
+| Only Task/Sub-task       | ❌ Not enough | No visibility   |
+| **Hybrid (Recommended)** | ✅ Best       | Balance of both |
+</file>
+
+<file path="YourNote-501:-Components-of-SQP.md">
+# Key Components of a Software Quality Plan (SQP)
+
+A **Software Quality Plan (SQP)** is a document that defines how quality will be achieved, monitored, controlled, and improved throughout a software project.
+
+---
+
+# 1. Project Overview
+
+Provides a general description of the project.
+
+### Includes:
+
+- Project name
+- Project objectives
+- Project scope
+- Stakeholders
+- Deliverables
+
+### Example
+
+> Development of a Student Management System for managing student registration, attendance, and academic records.
+
+---
+
+# 2. Quality Objectives
+
+Defines the quality goals that the software must achieve.
+
+### Examples
+
+- System availability ≥ 99%
+- Response time ≤ 3 seconds
+- Defect density < 2 defects per KLOC
+- User satisfaction ≥ 90%
+
+### Purpose
+
+- Establish measurable quality targets
+- Align quality expectations among stakeholders
+
+---
+
+# 3. Quality Standards and Policies
+
+Specifies standards, regulations, and guidelines to be followed.
+
+### Examples
+
+- ISO 9001
+- ISO/IEC 25010
+- Coding Standards
+- Security Standards
+- Organizational Policies
+
+### Purpose
+
+- Ensure consistency
+- Maintain compliance with industry standards
+
+---
+
+# 4. Roles and Responsibilities
+
+Defines who is responsible for quality-related activities.
+
+### Example
+
+| Role | Responsibility |
+|--------|---------------|
+| Project Manager | Overall project quality |
+| QA Manager | Quality planning and audits |
+| Developers | Follow coding standards |
+| Testers | Execute testing activities |
+| Configuration Manager | Version and change control |
+
+---
+
+# 5. Quality Assurance Activities
+
+Describes activities used to prevent defects.
+
+### Examples
+
+- Process audits
+- Technical reviews
+- Code reviews
+- Standards compliance checks
+- Training programs
+
+### Purpose
+
+- Improve development processes
+- Prevent defects before they occur
+
+---
+
+# 6. Quality Control Activities
+
+Describes activities used to detect defects.
+
+### Examples
+
+- Unit Testing
+- Integration Testing
+- System Testing
+- User Acceptance Testing (UAT)
+- Inspections
+
+### Purpose
+
+- Verify software quality
+- Identify and correct defects
+
+---
+
+# 7. Review and Audit Procedures
+
+Defines how reviews and audits will be conducted.
+
+### Examples
+
+- Requirements Review
+- Design Review
+- Code Review
+- Quality Audit
+- Documentation Review
+
+### Purpose
+
+- Ensure compliance with quality standards
+- Identify process weaknesses
+
+---
+
+# 8. Testing Strategy
+
+Describes the testing approach for the project.
+
+### Includes
+
+- Testing levels
+- Testing techniques
+- Testing tools
+- Test environments
+- Test schedules
+
+### Example
+
+| Testing Level | Purpose |
+|--------------|----------|
+| Unit Testing | Verify individual modules |
+| Integration Testing | Verify module interactions |
+| System Testing | Verify complete system |
+| UAT | Verify user requirements |
+
+---
+
+# 9. Configuration Management
+
+Defines how project artifacts will be controlled and maintained.
+
+### Includes
+
+- Version control procedures
+- Change management process
+- Release management
+- Baseline management
+
+### Tools
+
+- Git
+- GitHub
+- GitLab
+- Bitbucket
+
+### Purpose
+
+- Prevent unauthorized changes
+- Maintain traceability
+
+---
+
+# 10. Defect Management Process
+
+Defines how defects are reported, tracked, and resolved.
+
+### Includes
+
+- Defect reporting procedures
+- Severity classification
+- Defect tracking workflow
+- Resolution process
+
+### Example Severity Levels
+
+| Severity | Description |
+|-----------|------------|
+| Critical | System failure |
+| High | Major functionality affected |
+| Medium | Partial functionality issue |
+| Low | Cosmetic issue |
+
+---
+
+# 11. Quality Metrics
+
+Defines measurements used to evaluate quality.
+
+### Product Metrics
+
+- Defect Density
+- Reliability
+- Availability
+- Performance
+
+### Process Metrics
+
+- Defect Removal Efficiency
+- Review Effectiveness
+- Test Coverage
+
+### Project Metrics
+
+- Schedule Variance
+- Cost Variance
+- Productivity
+
+---
+
+# 12. Risk Management
+
+Identifies quality-related risks and mitigation strategies.
+
+### Example
+
+| Risk | Impact | Mitigation |
+|--------|---------|-----------|
+| Lack of testing resources | High | Add additional testers |
+| Frequent requirement changes | Medium | Implement change control |
+| Tight deadlines | High | Prioritize critical features |
+
+---
+
+# 13. Deliverables and Documentation
+
+Lists quality-related documents produced during the project.
+
+### Examples
+
+- Software Quality Plan
+- Test Plan
+- Test Cases
+- Audit Reports
+- Defect Reports
+- Review Reports
+- User Acceptance Report
+
+---
+
+# 14. Quality Improvement Process
+
+Defines how continuous improvement will be performed.
+
+### Activities
+
+- Root Cause Analysis
+- Lessons Learned
+- Process Improvement Initiatives
+- Corrective Actions
+- Preventive Actions
+
+### Purpose
+
+- Improve future project quality
+- Reduce recurring defects
+
+---
+
+# Summary of Software Quality Plan Components
+
+| No | Component |
+|-----|------------|
+| 1 | Project Overview |
+| 2 | Quality Objectives |
+| 3 | Quality Standards and Policies |
+| 4 | Roles and Responsibilities |
+| 5 | Quality Assurance Activities |
+| 6 | Quality Control Activities |
+| 7 | Review and Audit Procedures |
+| 8 | Testing Strategy |
+| 9 | Configuration Management |
+| 10 | Defect Management Process |
+| 11 | Quality Metrics |
+| 12 | Risk Management |
+| 13 | Deliverables and Documentation |
+| 14 | Quality Improvement Process |
+</file>
+
+<file path="YourNote-601:-SQA-Tools.md">
+## Software Quality Assurance Tools
+
+### 1. Static Code Analysis Tools
+
+- SonarQube
+- `Checkstyle`
+- `PMD`
+- `FindBugs` / SpotBugs
+
+### 2. Version Control Tools
+
+- `Git`
+- `GitHub / GitLab / Bitbucket`
+
+### 3. Requirements & Project Management Tools
+
+- `JIRA`
+- Trello
+- Asana
+- Redmine
+
+### 4. CI/CD Tools (DevOps Quality)
+
+- `GitHub Actions`
+- `Jenkins`
+- `GitLab CI/CD`
+- Azure DevOps
+
+### 5. Testing Tools
+#### a. Unit Testing
+
+- `JUnit`
+- `TestNG`
+- NUnit
+- PyTest
+
+#### b. Automation / Functional Testing
+
+- `Selenium`
+- Cypress
+- Playwright
+- Katalon Studio
+
+#### c. Performance Testing
+
+- `JMeter`
+- Gatling
+- Locust
+
+#### d. API Testing
+
+- `Postman`
+- Newman
+- REST Assured
+- `Swagger / OpenAPI tools`
+
+### 6. Defect Tracking Tools
+
+- `JIRA` (most popular)
+- Bugzilla
+- MantisBT
+- `GitHub Issues`
+</file>
+
+<file path="YourNote-602:-Software-Audit.md">
+# Software Audit
+
+## 1. What is Software Audit?
+Software Audit is a systematic process used to evaluate whether software products, development processes, documentation, security controls, and operational procedures comply with established standards and achieve the required quality levels.
+
+It is an essential component of **Software Quality Assurance (SQA)** and **Software Quality Management (SQM)**, helping organizations improve software quality, reduce risks, and ensure compliance with industry best practices.
+
+Keys:
+- Software products
+- Development processes
+- Documentation
+- Security controls
+- Compliance with standards and regulations
+
+---
+
+# 2. Objectives of Software Audit
+
+## a) Assess Compliance
+
+Ensure that the organization complies with:
+
+- Internal policies
+- Industry standards
+- Customer requirements
+- Government regulations
+
+### Examples
+
+- ISO 9001
+- ISO/IEC 25010
+- ISO/IEC 27001
+- CMMI
+
+---
+
+## b) Evaluate Software Quality
+
+The audit evaluates whether the software meets quality requirements in terms of:
+
+- Reliability
+- Security
+- Performance
+- Maintainability
+- Usability
+
+---
+
+## c) Identify Risks
+
+Examples of common risks include:
+
+- Lack of backup procedures
+- Weak password policies
+- Absence of version control
+- Insufficient testing practices
+
+---
+
+# 3. Types of Software Audit
+
+## Internal Audit
+
+Conducted by the organization's own audit team.
+
+### Purpose
+
+- Internal process improvement
+- Preparation for external audits
+
+---
+
+## External Audit
+
+Conducted by independent external parties.
+
+### Examples
+
+- ISO auditors
+- Government auditors
+
+---
+
+## Compliance Audit
+
+Evaluates compliance with specific standards or regulations.
+
+### Examples
+
+- ISO 9001
+- ISO/IEC 27001
+- GDPR
+- Industry-specific regulations
+
+---
+
+## Security Audit
+
+Focuses on information security and cybersecurity practices.
+
+### Areas Reviewed
+
+- Authentication
+- Authorization
+- Encryption
+- Vulnerability management
+- Access control
+
+---
+
+## Process Audit
+
+Evaluates software development processes.
+
+### Examples
+
+- Agile
+- Scrum
+- DevOps
+- CI/CD practices
+
+---
+
+# 4. Software Audit Phases
+
+## Phase 1: Audit Planning
+
+Activities include:
+
+- Defining audit scope
+- Establishing audit objectives
+- Preparing audit schedules
+
+---
+
+## Phase 2: Evidence Collection
+
+Auditors gather evidence from:
+
+- Project documents
+- Source code repositories
+- Test reports
+- Development records
+
+---
+
+## Phase 3: Interviews
+
+Interviews may involve:
+
+- Project Managers
+- Software Developers
+- Testers
+- DevOps Engineers
+- System Administrators
+
+---
+
+## Phase 4: Evaluation
+
+Collected evidence is compared against:
+
+- Standards
+- Policies
+- Procedures
+- Best practices
+
+---
+
+## Phase 5: Audit Reporting
+
+The audit report typically includes:
+
+- Findings
+- Non-conformities
+- Risks
+- Recommendations
+
+---
+
+# 5. Documents Commonly Audited
+
+## Requirements Documentation
+
+Examples:
+
+- Software Requirements Specification (SRS)
+- User Requirements Document
+
+---
+
+## Design Documentation
+
+Examples:
+
+- UML Diagrams
+- ERD Diagrams
+- Architecture Documents
+
+---
+
+## Source Code
+
+Examples:
+
+- Java
+- Spring Boot
+- Angular
+- Python
+
+Auditors may review:
+
+- Coding standards
+- Security vulnerabilities
+- Maintainability
+- Documentation quality
+
+---
+
+## Testing Documentation
+
+Examples:
+
+- Test Plans
+- Test Cases
+- Test Reports
+- Defect Reports
+
+---
+
+## Deployment Documentation
+
+Examples:
+
+- CI/CD Pipelines
+- Docker Configurations
+- Release Notes
+- Deployment Procedures
+
+---
+
+# 6. Auditing Agile Projects
+
+## Product Backlog
+
+- Are requirements properly documented?
+- Are priorities clearly defined?
+
+---
+
+## Sprint Planning
+
+- Are sprint goals established?
+- Are tasks properly estimated?
+
+---
+
+## Sprint Review
+
+- Are deliverables reviewed and accepted?
+- Is stakeholder feedback recorded?
+
+---
+
+## Sprint Retrospective
+
+- Are improvement actions identified?
+- Are lessons learned documented?
+
+---
+
+# 7. Auditing DevOps Practices
+
+## Source Control Management
+
+Examples:
+
+- Git
+- GitHub
+- GitLab
+- Bitbucket
+
+### Audit Checks
+
+- Branching strategy
+- Pull requests
+- Code reviews
+- Commit history
+
+---
+
+## CI/CD Pipeline
+
+### Audit Checks
+
+- Automated builds
+- Automated testing
+- Automated deployments
+- Rollback procedures
+
+---
+
+## Security Practices
+
+### Audit Checks
+
+- Secret management
+- Vulnerability scanning
+- Dependency scanning
+- Container security
+
+---
+
+# 8. Auditing Based on ISO/IEC 25010
+
+ISO/IEC 25010 defines software quality characteristics.
+
+| Quality Characteristic | Description |
+|-----------------------|-------------|
+| Functional Suitability | Software functions meet user requirements |
+| Performance Efficiency | Efficient use of resources and response times |
+| Compatibility | Ability to coexist and interact with other systems |
+| Usability | Ease of use and user satisfaction |
+| Reliability | Ability to perform consistently under specified conditions |
+| Security | Protection of information and resources |
+| Maintainability | Ease of modification and enhancement |
+| Portability | Ability to transfer software across environments |
+
+---
+
+# 9. Auditing Based on ISO/IEC 27001
+
+Focuses on information security management.
+
+### Key Areas
+
+- Access Control
+- Password Management
+- Data Encryption
+- Backup Management
+- Incident Management
+- Risk Management
+- Security Policies
+
+---
+
+# 10. Audit Findings
+
+## Major Non-Conformity
+
+A significant issue that may seriously impact the system or organization.
+
+### Examples
+
+- No database backup strategy
+- Lack of access control mechanisms
+- Critical security vulnerabilities
+
+---
+
+## Minor Non-Conformity
+
+A less severe issue that requires correction.
+
+### Examples
+
+- Incomplete documentation
+- Missing approval signatures
+
+---
+
+## Observation
+
+An opportunity for improvement.
+
+### Examples
+
+- Increase automated testing coverage
+- Improve deployment documentation
+
+---
+
+# 11. Metrics Commonly Used in Software Audits
+
+## Quality Metrics
+
+- Defect Density
+- Defect Leakage
+- Test Coverage
+- Defect Removal Efficiency
+
+---
+
+## DevOps Metrics (DORA Metrics)
+
+- Deployment Frequency
+- Lead Time for Changes
+- Change Failure Rate
+- Mean Time to Recovery (MTTR)
+
+---
+
+## Code Quality Metrics
+
+- Cyclomatic Complexity
+- Code Coverage
+- Technical Debt
+- Maintainability Index
+
+---
+
+# 12. Common Audit Questions
+
+1. Where are system requirements documented?
+2. How are requirement changes managed?
+3. Is code review performed before merging code?
+4. Is automated testing implemented?
+5. How is backup managed?
+6. How is deployment performed?
+7. Is there a rollback plan?
+8. Who approves software releases?
+9. How are security issues handled?
+10. Is an audit trail maintained?
+</file>
+
+<file path="YourNote-701:-Software-Quality-Control.md">
+# Software Quality Control (SQC)
+
+Software Quality Control (SQC) is one of the most important topics in Software Quality Management because it focuses on **detecting defects in software products** before they are delivered to customers.
+
+---
+
+# 1. What is Software Quality Control (SQC)?
+
+Software Quality Control (SQC) is a set of activities used to verify that software products meet specified requirements and quality standards.
+
+### Main Purpose
+
+- Detect defects
+- Verify correctness
+- Validate functionality
+- Ensure software quality
+- Reduce customer-reported issues
+
+### Key Idea
+
+> Quality Control is product-oriented and focuses on finding defects in the software product.
+
+---
+
+# 2. Quality Assurance (QA) vs Quality Control (QC)
+
+| Quality Assurance (QA) | Quality Control (QC) |
+|------------------------|---------------------|
+| Process-oriented | Product-oriented |
+| Prevent defects | Detect defects |
+| Proactive | Reactive |
+| Focus on process improvement | Focus on product verification |
+| Audits and standards | Testing and inspections |
+
+### Example
+
+#### QA Activities
+
+- Establish coding standards
+- Create development procedures
+- Conduct process audits
+- Define quality processes
+
+#### QC Activities
+
+- Perform testing
+- Conduct inspections
+- Verify outputs
+- Detect defects
+
+---
+
+# 3. Objectives of Software Quality Control
+
+- Detect defects before software release
+- Ensure requirements are met
+- Improve product reliability
+- Verify software functionality
+- Validate customer expectations
+- Reduce maintenance costs
+- Improve customer satisfaction
+
+---
+
+# 4. Major Software Quality Control Activities
+
+1. Reviews
+1. Walkthrough
+1. Technical Review
+1. Inspection
+
+---
+
+# 5. Software Testing
+
+Testing is the most common Software Quality Control activity.
+
+## Verification vs Validation
+
+### Verification
+
+**Question:** Are we building the product correctly?
+
+Verification ensures that software artifacts comply with specifications.
+
+### Examples
+
+- Reviews
+- Walkthroughs
+- Inspections
+- Static analysis
+
+---
+
+### Validation
+
+**Question:** Are we building the right product?
+
+Validation ensures the software satisfies user needs and requirements.
+
+### Examples
+
+- Functional testing
+- System testing
+- User Acceptance Testing (UAT)
+
+---
+
+# 6. Levels of Testing
+
+- Unit Testing
+- Integration Testing
+- System Testing
+- User Acceptance Testing (UAT)
+
+---
+
+# 7. Software Quality Metrics Used in QC
+
+Metrics help evaluate software quality and testing effectiveness.
+
+---
+
+## Defect Density
+
+Measures the number of defects relative to software size.
+
+### Formula
+
+```text
+Defect Density = Number of Defects / KLOC
+```
+
+Where:
+
+- KLOC = Thousand Lines of Code
+
+---
+
+## Test Coverage
+
+Measures the percentage of software tested.
+
+### Formula
+
+```text
+Test Coverage = Covered Code / Total Code × 100%
+```
+
+---
+
+## Defect Removal Efficiency (DRE)
+
+Measures the effectiveness of defect removal activities.
+
+### Formula
+
+```text
+DRE = Defects Found Before Release / Total Defects × 100%
+```
+
+---
+
+## Defect Leakage
+
+Measures defects that escape into production.
+
+### Formula
+
+```text
+Defect Leakage = Production Defects / Total Defects × 100%
+```
+
+---
+
+# 8. Quality Control Tools
+
+## Testing Tools
+
+- JUnit
+- Selenium
+- Postman
+- Cypress
+
+## Defect Tracking Tools
+
+- Jira
+
+
+## Code Quality Tools
+
+- SonarQube
+- PMD
+- Checkstyle
+
+---
+
+# 9. Benefits of Software Quality Control
+
+- Higher software quality
+- Reduced defects
+- Improved reliability
+- Better customer satisfaction
+- Lower maintenance costs
+- Reduced project risks
+- Improved product performance
+</file>
+
+<file path="YourNote-702:-Reliability-Growth-Models.md">
+## Introduction
+Reliability Growth Models are mathematical models used to measure, estimate, and predict how software reliability improves as defects are found and fixed during testing.
+>Reliability Growth Models show how software becomes more reliable over time through defect removal.
+
+## Why Reliability Growth Models Are Important in QMS
+Reliability models support:
+
+1. Quality Planning
+   - Estimate how many defects remain
+   - Schedule testing effort
+   - Predict reliability trends
+
+2. Quality Control
+   - Monitor defect detection rates
+   - Identify if testing is effective
+   - Check whether reliability is improving
+
+3. Quality Assurance
+   - Support decision-making (when to release)
+   - Validate if quality targets are met
+   - Identify high-risk periods
+
+## What Reliability Growth Models Measure
+- Number of defects remaining
+- Failure rate over time
+- Mean Time To Failure (MTTF)
+- Reliability growth curve
+- When the system becomes stable
+- If defect fixes are improving or worsening quality
+
+## Popular Reliability Growth Models
+1. Musa-Okumoto (Logarithmic Poisson Model)
+   - Assumes failures decrease logarithmically over time
+   - Used for online or real-time systems
+   - Good for reliability prediction in operational environments
+
+2. Goel-Okumoto (NHPP — Non-Homogeneous Poisson Process)
+   - Defect arrival rate decreases over time
+   - Very popular because it fits real testing patterns
+   - Models “failure intensity” reduction as testing continues
+
+3. Jelinski–Moranda Model
+   - One of the earliest models
+   - Assumes fixing each defect reduces failure rate
+   - Simple but less accurate for large systems
+
+4. Rayleigh / Putnam Model
+   - Based on Rayleigh curve
+   - Predicts defect discovery rate (rise → peak → fall)
+   - Used for manpower planning and schedule prediction
+   - Supports reliability growth indirectly
+
+5. Duane Model
+   - Uses empirical failure data
+   - Reliability increases following a power-law curve
+   - Widely used in hardware but also applied to software
+
+
+## Common Features of Reliability Growth Models
+All reliability models share these concepts:
+1. Failure Intensity
+   - How frequently failures are detected.
+2. Reliability Growth
+   - Failures drop as defects are removed.
+3. Expected Remaining Defects
+   - Model predicts how many bugs are still inside.
+4. Trend Curves
+   - Visual patterns used to judge testing effectiveness.
+
+## How Reliability Models Help QMS
+1. Decision Making
+   - “Is the software reliable enough to release?”
+   - “Should testing continue?”
+   - “How many defects remain?”
+
+2. Improve Testing Strategy
+   - If failure intensity is not dropping → testing is ineffective
+   - Peak testing periods can be planned
+   - Resources can be allocated based on expected defect arrivals
+
+3. Identify Process Weaknesses
+   - If reliability is NOT growing → defect introduction is higher than removal
+   - Indicates quality problems in requirements, design, or coding
+
+4. Predict Release Reliability
+   - Used for:
+     - SQA Plan
+     - Reliability goals (e.g., 99.9%)
+     - Customer acceptance criteria
+
+## Reliability Metrics Associated with These Models
+These metrics help QMS teams monitor and predict quality.
+- MTTF (Mean Time To Failure)
+- MTBF (Mean Time Between Failures)
+- Failure Intensity (λ)
+- Defect Discovery Rate
+- Residual Defects
+- Reliability Growth Rate
+
+## Limitations of Reliability Growth Models
+- Require historical or real failure data
+- Incorrect assumptions → misleading predictions
+- Fixing defects may introduce new defects
+- Not suitable for very small or extremely agile teams
+- Assumes constant or similar testing conditions
+</file>
+
+<file path="YourNote-703:-Example-FEQ.md">
+### Question
+
+Reliability Growth Models help quality management teams predict how software reliability improves as defects are detected and fixed during testing. The table below shows the cumulative number of failures observed during system testing of the **EduTrack** application.
+
+| Week | 1 | 2 | 3 | 4 | 5 |
+|------|---|---|---|---|---|
+| Cumulative Failures | 18 | 30 | 37 | 41 | 42 |
+
+#### a) Identify the week where the rate of failure discovery begins to slow down.
+**(1 mark)**
+
+#### b) Explain how this slowdown reflects reliability growth.
+**(3 marks)**
+
+#### c) Suggest THREE (3) actions the quality team can take based on the reliability trend to prepare the software for release.
+**(3 marks)**
+
+**[Total: 7 Marks]**
+</file>
+
+<file path="YourNote-801:-Software-Metrics.md">
+## Introduction
+Software metrics are quantitative measurements used to evaluate the quality, performance, and efficiency of software products and development processes.
+>Software metrics help you measure, control, improve, and predict software quality.
+
+## Why Software Metrics Are Important
+Metrics help to:
+- Detect defects early
+- Monitor progress
+- Improve development processes
+- Predict project effort and cost
+- Measure product quality
+- Support decision-making
+- Improve reliability, maintainability, and usability
+>Metrics turn assumptions into measurable facts.
+
+## Types of Software Metrics
+
+### A. Product Metrics
+Measure the quality of the software itself. Examples:
+- Defect density (defects per KLOC or per function point)
+- Cyclomatic complexity
+- Code coverage
+- Response time/throughput
+- Reliability metrics (MTTF, MTBF)
+- Usability metrics (task success rate)
+
+### B. Process Metrics
+Measure the effectiveness of the development process. Examples:
+- Defect arrival rate
+- Review efficiency
+- Test case effectiveness
+- Mean time to detect defects (MTTD)
+- Mean time to repair (MTTR)
+
+### C. Project Metrics
+Measure project progress and productivity. Examples:
+- Effort (person-hours/person-days)
+- Schedule variance
+- Cost variance
+- Team productivity
+- Resource allocation efficiency
+
+## Key Software Quality Metrics (Common in Industry)
+1. Defect Density
+```
+Defects / KLOC or Defects per Function Point
+```
+
+2. Code Coverage
+   - Percentage of code executed by automated tests.
+3. Cyclomatic Complexity
+   - Measures how complex the code logic is.
+   - High complexity = harder to maintain + more defects.
+4. Customer-Reported Defects
+   - Number of issues found by users after release.
+5. Reliability Metrics
+   - MTTF (Mean Time to Failure)
+   - MTBF (Mean Time Between Failures)
+   - Failure rate
+6. Test Effectiveness
+   - How well testing finds defects early.
+7. Requirement Stability Index
+   - Measures how often requirements change.
+
+## Metrics Used in SQA Plan
+An SQA Plan usually defines metrics such as:
+- Number of defects found in each testing phase
+- Review coverage (percentage of modules reviewed)
+- Regression defects
+- Code review defects per hour
+- Test pass/fail ratio
+- Configuration management errors
+>Metrics in SQA help track whether quality goals are met.
+
+## Characteristics of Good Metrics
+A good metric should be:
+- Measurable (quantitative, not subjective)
+- Repeatable (consistent results)
+- Relevant (useful for decision-making)
+- Low-cost to collect
+- Simple to understand
+- Actionable (leads to improvements)
+
+## Tools Used for Software Metrics
+- SonarQube (code quality, complexity, duplication)
+- JIRA (defect metrics, burndown charts)
+- Jenkins / GitHub Actions (CI/CD metrics)
+- JMeter (performance metrics)
+- Postman (API performance)
+- TestRail (test metrics)
+
+## Common Metric Problems
+- Measuring the wrong thing
+- Misinterpreting data
+- Collecting too many metrics
+- Metrics used to blame people instead of improving process
+- Not linking metrics to business goals
+</file>
+
+<file path="YourNote-802:-CI-CD-Metrics.md">
+## Introduction
+CI/CD metrics measure how effective, fast, stable, and reliable your build, testing, and deployment pipelines are.
+They help you evaluate automation quality, delivery performance, and process bottlenecks.
+>CI/CD metrics = indicators of pipeline health, delivery speed, and software stability.
+
+## Why CI/CD Metrics Are Important
+You must understand that CI/CD metrics help teams to:
+- Detect pipeline failures early
+- Improve delivery frequency
+- Reduce deployment risks
+- Monitor automation effectiveness
+- Ensure reliable and repeatable builds
+- Improve collaboration between developers and QA
+- Increase customer satisfaction through faster releases
+
+## Key CI/CD Metrics
+
+1. Build Success Rate
+   - Percentage of successful builds vs failed builds.
+   >Low success rate = unstable code, poor testing, or bad integration practices.
+
+2. Deployment Frequency
+   - How often does the team deploy to staging/production?
+   - Industry benchmark (DORA):
+     - Elite teams deploy daily or hourly.
+     - Low performers deploy monthly or quarterly.
+     >High frequency = strong automation + small, safe changes.
+
+3. Lead Time for Changes
+   - Time taken from code commit → deployment.
+   - High-performing teams:
+     - Lead time is < 1 day.
+     >Short lead time = fast development + efficient pipeline.
+
+4. Mean Time to Recovery (MTTR)
+   - Time needed to fix a failure in production.
+   >Lower MTTR = high reliability and effective rollback processes.
+
+5. Change Failure Rate
+   - Percentage of deployments that cause failed builds, hotfixes, rollbacks, or outages.
+   >High failure rate = poor testing or unstable pipeline.
+
+6. Test Coverage in CI Pipeline
+   - Percentage of code executed by automated tests during CI.
+   >Higher coverage = lower risk of hidden defects.
+
+7. Pipeline Duration / Build Time
+   - How long does the CI/CD pipeline take to complete?
+   >Slow build times slow down the entire team and reduce productivity.
+
+8. Flaky Test Rate
+   - Tests that sometimes pass and sometimes fail for no valid reason.
+   >Flaky tests destroy trust in the CI/CD pipeline.
+
+## CI/CD Metrics in SQA Plan
+In Software Quality Management, CI/CD metrics support:
+- Quality control (tests, builds, deployments monitored automatically)
+- Quality assurance (process improvement, standardization)
+- Continuous improvement (PDCA applied to pipeline performance)
+
+Metrics typically included in an SQA Plan:
+- Build success rate
+- Deployment frequency
+- Code coverage
+- Defect leakage in CI
+- Test pass/fail rate
+- Time to detect & fix pipeline failures
+
+## Tools for Collecting CI/CD Metrics
+These tools automatically give metrics:
+- GitHub Actions → build failures, duration, success rate
+- GitLab CI/CD → pipeline analytics, DORA metrics
+- Jenkins → build time, success rate, test reports
+- SonarQube → code quality metrics, coverage
+- New Relic / Datadog → deployment and production health
+- Sentry / LogRocket → error rates, failure impact
+
+## Common CI/CD Metric Mistakes
+- Collecting too many metrics → noise
+- Using metrics to blame developers → kills DevOps culture
+- Ignoring trend analysis
+- Not linking metrics to business goals
+- Focusing only on speed, not stability
+</file>
+
+<file path="YourNote-803:-DORA-Metrics.md">
+## DORA Metrics
+
+DORA Metrics are a set of software delivery and DevOps performance metrics developed by the DevOps Research and Assessment (DORA) team, now part of Google Cloud. These metrics are widely used to evaluate the effectiveness of software development, deployment, and operational processes.
+
+## Why DORA Metrics?
+1. Provide objective measurements of DevOps performance.
+1. Identify bottlenecks in the CI/CD pipeline.
+1. Evaluate the effectiveness of automation tools such as GitHub Actions and Docker.
+1. Serve as industry-recognised engineering performance indicators.
+1. Help teams continuously improve software delivery quality and speed.
+
+## The Four Key DORA Metrics
+
+| Metric                      | What It Measures                               | Goal             |
+| --------------------------- | ---------------------------------------------- | ---------------- |
+| Deployment Frequency (DF)   | How often software is deployed to production   | Higher is better |
+| Lead Time for Changes (LT)  | Time from code commit to production deployment | Lower is better  |
+| Change Failure Rate (CFR)   | Percentage of deployments causing failures     | Lower is better  |
+| Mean Time to Restore (MTTR) | Time required to recover from a failure        | Lower is better  |
+
+
+## 1. Deployment Frequency (DF)
+
+Question: How often does the team deploy software to production?
+
+### Formula:
+```
+Deployment Frequency = Number of Deployments / Time Period
+```
+
+### Example
+- 20 deployments per week
+- 80 deployments per month
+
+A higher deployment frequency indicates that the team can deliver new features and improvements to users more rapidly.
+
+### In an Angular + Spring Boot Project
+
+Examples of deployments include:
+- Pushing code to GitHub
+- Building Docker images through GitHub Actions
+- Deploying applications to a cloud server such as DigitalOcean
+
+>Each successful production deployment contributes to the Deployment Frequency metric.
+
+## 2. Lead Time for Changes (LT)
+
+Question: How long does it take for a code change to reach production?
+>Time to implement, test, and deliver code for a feature (measured from first commit to deployment)
+
+### Formula:
+```
+Lead Time = Deployment Date − First Commit Date
+```
+
+### Example
+
+| Activity                 | Date   |
+| ------------------------ | ------ |
+| Developer first commits code   | June 1 |
+| Deployment to production | June 2 |
+
+Lead Time = 1 day
+
+>A shorter lead time indicates a more efficient software delivery process.
+
+## 3. Change Failure Rate (CFR)
+
+Question: What percentage of deployments result in failures?
+
+### Formula:
+```
+Change Failure Rate = (Failed Deployments / Total Deployments) × 100%
+```
+
+### Example
+- 100 deployments
+- 5 deployments caused production issues
+- Therefore, CFR = 5%
+
+>A lower Change Failure Rate indicates higher software quality and deployment reliability.
+
+## 4. Mean Time to Restore (MTTR)
+
+Question: If a failure occurs, how quickly can the team restore service?
+
+### Formula:
+```
+MTTR = Total Recovery Time / Number of Incidents
+```
+
+### Example
+
+| Incident         | Recovery Time |
+| ---------------- | ------------- |
+| Server outage    | 30 minutes    |
+| Database failure | 15 minutes    |
+| API crash        | 45 minutes    |
+
+MTTR = (30 + 15 + 45) / 3 = 30 minutes
+
+>A lower MTTR reflects an effective incident response and recovery process.
+
+## The Fifth DORA Metric: Reliability
+
+More recent DORA research also emphasizes Reliability as an additional performance measure.
+
+### Examples include:
+- System uptime (e.g., 99.9%)
+- API response time
+- Error rate
+- SLA compliance
+
+>Reliability focuses on the end-user experience and system dependability.
+
+## Relationship Between DORA Metrics and DevOps Tools
+
+| Technology           | Related DORA Metric   |
+| -------------------- | --------------------- |
+| GitHub               | Lead Time for Changes |
+| GitHub Actions       | Deployment Frequency  |
+| JUnit / Mockito      | Change Failure Rate   |
+| Docker               | Deployment Frequency  |
+| Prometheus / Grafana | MTTR                  |
+| SonarQube            | Change Failure Rate   |
+
+
+## Example `Class Project` Case Study
+Suppose a student team develops:
+- Angular Frontend
+- Spring Boot Backend
+- MySQL Database
+- GitHub Actions CI/CD Pipeline
+- Docker Containers
+- DigitalOcean Deployment
+
+During one month:
+1. 40 deployments were performed
+1. 2 deployments failed
+1. Average commit-to-production time = 4 hours
+1. Average recovery time = 20 minutes
+
+The DORA metrics would be:
+
+| Metric                | Value                |
+| --------------------- | -------------------- |
+| Deployment Frequency  | 40 deployments/month |
+| Lead Time for Changes | 4 hours              |
+| Change Failure Rate   | 5%                   |
+| MTTR                  | 20 minutes           |
+
+>These values indicate a relatively mature and efficient DevOps process.
+
+## References:
+1. https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment
+1. https://dora.dev/guides/dora-metrics/
+1. https://www.atlassian.com/devops/frameworks/dora-metrics
+</file>
+
+<file path="YourNote-901:-Peer-Review.md">
+## Introduction
+A peer review is an informal or semi-formal evaluation of a software work product by colleagues (peers) to identify defects, improve quality, and provide feedback. It is one of the simplest and most widely used SQA techniques.
+>Peer Review = A review done by team members to check quality, find defects, and provide improvements.
+
+## Purpose of Peer Review
+- Find defects early before testing
+- Improve clarity, correctness, and consistency
+- Share knowledge among team members
+- Ensure adherence to coding and design standards
+- Improve maintainability
+- Provide constructive feedback for improvement
+- Reduce development time and cost
+>Peer reviews serve as the first quality checkpoint before formal reviews.
+
+## When Peer Reviews Are Used
+Peer reviews can be applied to almost any work product:
+- Requirements
+- Design documents
+- Source code
+- Test cases
+- User stories
+- API documentation
+- UI wireframes
+>They are typically applied frequently and early.
+
+## Characteristics of Peer Review
+1. Informal or semi-formal
+   - Less strict than inspection; no rigid rules.
+
+2. Conducted by peers
+   - People with similar roles or skills review each other’s work.
+
+3. Flexible structure
+   - May involve a meeting or just offline comments.
+
+4. Focus on improvement
+   - Not only defect detection; also helps increase team understanding.
+
+5. Low cost and fast
+   - Lightweight and suitable for Agile environments.
+
+## Roles in Peer Review
+Usually fewer roles compared to inspections:
+- Author — presents or shares the work product
+- Reviewer(s) — peers who evaluate the product
+- Optional: Scribe, moderator (depending on team practice)
+>Most Agile teams use peer review through pull requests (PRs).
+
+## Activities in a Peer Review
+Common steps:
+- Author shares document/code
+- Reviewer(s) read and comment
+- Discussion on problems and improvements
+- Author fixes issues
+- (Optional) Follow-up to confirm corrections
+>Often performed via tools such as GitHub/GitLab pull requests.
+
+## Benefits of Peer Reviews
+- Detect defects early (before testing)
+- Improve code readability and maintainability
+- Increase shared understanding and team consistency
+- Encourage learning among team members
+- Reduce cost by catching issues before integration
+- Improve quality of both code and documentation
+>Peer reviews are a key practice in Agile, Scrum, and DevOps.
+
+## Difference: Peer Review vs Walkthrough vs Inspection
+| Feature           | **Peer Review**    | **Walkthrough**         | **Inspection**                     |
+| ----------------- | ------------------ | ----------------------- | ---------------------------------- |
+| **Formality**     | Informal           | Semi-formal             | Very formal                        |
+| **Leader**        | None or author     | Author                  | Moderator                          |
+| **Focus**         | Feedback + defects | Understanding + defects | Defects only                       |
+| **Roles**         | Minimal            | Few                     | Many (moderator, reader, recorder) |
+| **Documentation** | Optional           | Some notes              | Formal defect report               |
+| **Speed**         | Fast               | Medium                  | Slow                               |
+
+## Tools Supporting Peer Review
+Common in industry:
+- GitHub Pull Requests
+- GitLab Merge Requests
+- Bitbucket Code Review
+- Crucible
+- Gerrit
+- SonarLint/SonarQube (pre-review static analysis)
+>PR-based peer reviewing is standard in most modern software teams.
+</file>
+
+<file path="YourNote-902:-Walkthrough.md">
+## Introduction
+A walkthrough is a peer-review technique in software quality assurance where the author of a document or code leads team members through the work product to gather feedback, identify defects, and improve quality.
+>Walkthrough = Author-led review to find defects early and improve understanding.
+
+## Purpose of a Walkthrough
+Key reasons for conducting a walkthrough:
+- Detect defects early (before coding or release)
+- Improve the quality of documents or code
+- Share knowledge among team members
+- Verify that the product meets requirements
+- Get feedback from different stakeholders
+- Increase team understanding of the work product
+
+## When Walkthroughs Are Used
+Walkthroughs typically occur at:
+- Requirements review
+- Design review
+- Code review
+- Test case review
+- User manual / documentation review
+>Used early to avoid costly rework.
+
+## Characteristics of a Walkthrough
+1. Led by the author
+   - The writer explains and demonstrates the work.
+
+2. Informal or semi-formal
+   - Less strict than an inspection.
+   - No specific roles required.
+
+3. Interactive session
+   - Participants ask questions, suggest improvements, and discuss alternatives.
+
+4. Focuses on understanding + defects
+   - Not only bug finding—helps the team understand logic and requirements.
+
+5. Flexible structure
+   - Agenda varies depending on product or team needs.
+
+
+## Roles Involved in a Walkthrough
+Walkthroughs do not require strict roles, but commonly include:
+- Author (Leader)
+- Reviewers / Peers
+- Scribe (Note Taker) (optional)
+- Stakeholders/domain experts (optional)
+>Unlike inspections, there is no moderator by default.
+
+## Activities in a Walkthrough Session
+Typical steps:
+1. Author presents document/code.
+2. Reviewers ask questions.
+3. Team discusses logic, requirements, alternatives.
+4. Potential defects are identified.
+5. Author collects feedback for improvement.
+
+## Benefits of Walkthroughs
+
+- Improves clarity and correctness
+- Reduces defects early
+- Increases shared understanding
+- Supports junior developers' learning
+- Encourages team communication
+- Improves maintainability (better code/design)
+
+## Walkthrough vs Inspection vs Review
+| Aspect             | **Walkthrough**            | **Inspection**                     | **Peer Review** |
+| ------------------ | -------------------------- | ---------------------------------- | --------------- |
+| **Leader**         | Author                     | Moderator                          | Peer            |
+| **Formality**      | Semi-formal                | Formal                             | Informal        |
+| **Goal**           | Understanding + defects    | Identify defects                   | Feedback        |
+| **Roles Required** | Few                        | Many (Reader, Recorder, Moderator) | Minimal         |
+| **Work Products**  | Requirements, design, code | All work products                  | All             |
+</file>
+
+<file path="YourNote-903:-Inspection.md">
+## Introduction
+Inspection is the most formal and rigorous type of peer review in software quality assurance. It follows a structured process, involves defined roles, uses checklists, and produces a formal defect report.
+>Inspection = A formal, structured, moderator-led review to detect defects early and improve product quality.
+
+## Purpose of Inspection
+- Identify defects early (before coding or release)
+- Ensure compliance with standards and requirements
+- Verify correctness, completeness, consistency
+- Reduce cost by detecting errors early in lifecycle
+- Ensure documentation, design, and code meet quality expectations
+- Improve reliability of the system before implementation
+
+## When Inspections Are Used
+Inspections are used for high-value or high-risk artifacts:
+- Requirements specification (to remove ambiguities)
+- Software design documents (UML diagrams, architecture diagrams)
+- Source code
+- Test plans and test cases
+- User manuals and technical documentation
+- Interface specifications
+>Because inspections are formal, they are usually applied to critical parts of the software. 
+
+## Characteristics of Inspection
+1. Highly formalized – more structured than walkthroughs and technical reviews
+1. Strict roles defined
+1. Checklist-driven review
+1. Documented defects and metrics
+1. Requires preparation before the meeting
+1. Moderator controls the process
+1. Focus solely on defect detection
+1. Follow-up is mandatory – ensuring defects are corrected
+
+## Roles in an Inspection
+- Moderator
+  - Leads the inspection, ensures rules are followed.
+- Author
+  - Person who wrote the document/code.
+- Reader
+  - Reads the material aloud to the team.
+- Recorder (Scribe)
+  - Documents all defects found.
+- Reviewer(s)
+  - Experts who evaluate the content.
+- Manager (optional)
+  - Provides resources/support.
+
+## Inspection Process Steps
+The typical lifecycle:
+1. Planning – select team, schedule meeting
+1. Overview – author explains context
+1. Preparation – reviewers study the material individually
+1. Inspection Meeting – defects are identified (no problem-solving allowed)
+1. Recording – scribe documents all defects
+1. Rework – author corrects defects
+1. Follow-up – moderator verifies resolution
+
+## Benefits of Inspection
+- Detects more defects than walkthroughs or reviews
+- Reduces rework and development cost
+- Ensures high-quality requirements, design, and code
+- Improves team understanding and adherence to standards
+- Prevents defects from propagating into later stages
+- Produces metrics (defect density, review rate)
+- Improves maintainability and reliability
+
+## Difference: Inspection vs Walkthrough vs Technical Review
+| Feature         | **Inspection**       | **Walkthrough**          | **Technical Review**          |
+| --------------- | -------------------- | ------------------------ | ----------------------------- |
+| **Formality**   | Very formal          | Least formal             | Medium                        |
+| **Leader**      | Moderator            | Author                   | Technical lead                |
+| **Focus**       | Defect detection     | Understanding + feedback | Technical correctness         |
+| **Preparation** | Mandatory            | Minimal                  | Required                      |
+| **Roles**       | Many defined roles   | Few roles                | Several                       |
+| **Output**      | Formal defect report | Feedback, suggestions    | Defect list + recommendations |
+
+
+## Tools Supporting Inspection
+- GitHub/GitLab Pull Request with checklist
+- Gerrit Code Review
+- Crucible
+- SonarQube (static analysis before manual inspection)
+- JIRA for defect tracking
+</file>
+
+<file path="YourNote-904:-Technical-Review.md">
+## Introduction
+A Technical Review is a peer review process where a team of qualified individuals (developers, designers, testers, domain experts) examine a software work product to identify defects, evaluate technical quality, and ensure it meets specifications.
+>Technical Review = Expert evaluation of a technical work product to ensure correctness, consistency, and technical quality.
+
+## Purpose of a Technical Review
+- Detect technical defects early
+- Validate technical correctness (logic, algorithms, architecture)
+- Ensure compliance with standards, design principles, and requirements
+- Improve quality before coding or release
+- Reduce cost of correcting later defects
+- Confirm the work product is ready for the next development stage
+
+## When Technical Reviews Are Used
+Technical reviews can be performed on:
+- Software requirements (technical feasibility)
+- System and software architecture
+- Design documents (UML diagrams, ERD)
+- Source code
+- Test cases and test strategy
+- Interface specifications
+- API contracts
+- Database schema
+>They are performed before implementation or integration, reducing costly errors.
+
+## Key Characteristics of a Technical Review
+- Moderated review
+  - Usually led by a moderator or technical lead.
+
+- Experts participate
+  - Participants include developers, testers, architects, SMEs.
+
+- Formal structure
+  - More structured than walkthroughs, less formal than inspections.
+
+- Checklist-based evaluation
+  - Reviews follow predefined checklists (coding standards, design rules).
+
+- Focus on technical quality
+  - Examines logic, algorithms, performance concerns, compliance.
+
+- Documented findings
+  - Defects and improvement suggestions are formally recorded.
+
+## Roles in a Technical Review
+The typical roles:
+- Moderator – oversees the session
+- Author - presents and clarifies the content
+- Reviewer(s) – technical experts evaluating the artifact
+- Recorder – documents the issues discovered
+- Manager (optional) – ensures resources and support
+
+## Activities in a Technical Review
+- Planning – Select reviewers, set meeting agenda
+- Preparation – Reviewers analyze the work individually
+- Review Meeting – Discuss defects, risks, inconsistencies
+- Documentation – Record issues and recommendations
+- Rework – Author corrects defects
+- Follow-up – Moderator verifies corrections
+
+## Benefits of Technical Reviews
+- Reduces technical defects early
+- Improves design and code quality
+- Enhances team knowledge and consistency
+- Reduces integration failures
+- Strengthens compliance with architecture and standards
+- Saves cost and time by preventing rework later
+
+## Difference: Technical Review vs Walkthrough vs Inspection
+| Feature         | **Inspection**       | **Walkthrough**          | **Technical Review**          |
+| --------------- | -------------------- | ------------------------ | ----------------------------- |
+| **Formality**   | Very formal          | Least formal             | Medium                        |
+| **Leader**      | Moderator            | Author                   | Technical lead                |
+| **Focus**       | Defect detection     | Understanding + feedback | Technical correctness         |
+| **Preparation** | Mandatory            | Minimal                  | Required                      |
+| **Roles**       | Many defined roles   | Few roles                | Several                       |
+| **Output**      | Formal defect report | Feedback, suggestions    | Defect list + recommendations |
+
+## Tools Supporting Technical Reviews
+- GitHub/GitLab Pull Requests
+- JIRA (defect tracking)
+- Confluence (documentation)
+- SonarQube (static analysis)
+- Code review tools (Crucible, Gerrit)
+</file>
+
+<file path="YourNote-KIV:-Rayleigh-Model.md">
+## Introduction
+The Rayleigh Model is a mathematical model used to predict effort, defects, and reliability over the software development lifecycle. It is most commonly applied in software project estimation, especially in the Putnam (SLIM) Model.
+>Rayleigh Model = A curve that shows how effort or defect discovery increases, peaks, and then decreases throughout a project.
+
+## Rayleigh Curve Shape
+The Rayleigh curve shows:
+- Slow increase in effort or defect discovery at the start
+- Peak (maximum) in the middle of development
+- Gradual decline toward the end  
+
+It looks like this:
+```
+Effort or Defects
+       /\
+      /  \
+     /    \
+    /      \
+___/        \______
+          Time →
+```
+This curve is essential to predicting stress points, testing needs, and resource allocation.
+
+## What the Rayleigh Model Is Used For
+A. Effort Prediction
+   - Predicts how manpower will be distributed over time.
+
+B. Defect Discovery Rate
+   - Shows when most defects will be found (usually during peak development).
+
+C. Reliability Growth
+   - Used to estimate when the system becomes stable.
+
+D. Schedule Estimation
+   - Predicts total development duration based on peak effort.
+
+E. Support for Putnam Model (SLIM)
+   - Rayleigh is the foundation of the Putnam Software Life Cycle Model.
+
+## How It Helps Software Quality Management
+Even though Rayleigh is not a direct QA activity, it supports quality management by:
+
+1. Planning testing effort
+   - Testers know when defect discovery will peak.
+
+2. Predicting manpower needs
+   - Avoids overloading or understaffing.
+
+3. Identifying defect arrival patterns
+   - Helps detect process or quality problems.
+
+4. Supporting reliability estimation
+   - Indicates when the product becomes stable enough for release.
+
+## Rayleigh Model Key Assumptions
+- Work rate starts slow, increases, peaks, then declines
+- Defects follow the same pattern as effort
+- Software development effort is smooth and continuous
+- Project phases overlap gradually
+- Team size is controlled and stable
+
+## Advantages
+- Easy to interpret visually
+- Helps predict peak workload and defect rate
+- Useful in early cost and schedule estimation
+- Provides realistic insight into reliability growth
+
+## Limitations
+- Assumes smooth, ideal development flow (not always realistic)
+- Not accurate for very small or chaotic projects
+- Requires historical data to adjust the curve
+- Less effective when team size changes frequently
+- Agile / DevOps (continuous testing)
+</file>
+
+<file path="YourNote-KIV:-Rayleigh-vs-Agile-SQA-Plan.md">
+## Rayleigh vs Agile SQA Plan
+A Rayleigh-based SQA Plan uses defect-trend prediction to control quality, while an Agile SQA Plan relies on continuous testing and sprint-based quality feedback.
+
+#### 1. SQA Philosophy
+| Aspect           | **Rayleigh-Based SQA Plan** | **Agile-Based SQA Plan** |
+| ---------------- | --------------------------- | ------------------------ |
+| Quality view     | Predictive                  | Adaptive                 |
+| Defect handling  | Planned distribution        | Continuous discovery     |
+| QA timing        | Late-phase intensive        | Shift-left & continuous  |
+| Change tolerance | Low                         | High                     |
+
+
+#### 2. Quality Objectives
+| Rayleigh SQA                                   | Agile SQA                         |
+| ---------------------------------------------- | --------------------------------- |
+| Achieve defect peak and decline before release | Maintain low defects every sprint |
+| Predict defect trend                           | React to real-time metrics        |
+| Release after stabilization                    | Release when sprint quality met   |
+
+
+#### 3. SQA Activities by SDLC Phase
+| Phase        | Rayleigh SQA Plan       | Agile SQA Plan                     |
+| ------------ | ----------------------- | ---------------------------------- |
+| Requirements | Formal reviews          | User stories & acceptance criteria |
+| Design       | Inspections             | Incremental design                 |
+| Development  | Unit testing            | TDD / pair programming             |
+| Testing      | Dedicated testing phase | Continuous testing                 |
+| Release      | Single major release    | Frequent releases                  |
+
+
+#### 4. Defect Discovery Pattern
+| Aspect        | Rayleigh          | Agile               |
+| ------------- | ----------------- | ------------------- |
+| Shape         | Single bell curve | Multiple mini-peaks |
+| Defect peak   | System testing    | Each sprint         |
+| Defect fixing | Batch-oriented    | Immediate           |
+
+
+#### 5. Quality Metrics
+| Metric                | Rayleigh SQA        | Agile SQA          |
+| --------------------- | ------------------- | ------------------ |
+| Defect discovery rate | Tracked vs curve    | Tracked per sprint |
+| Defect density        | Release readiness   | Sprint quality     |
+| Defect leakage        | Post-release metric | Sprint spillover   |
+| Test coverage         | Final assessment    | Continuous         |
+
+
+#### 6. Quality Gates
+| Gate             | Rayleigh SQA       | Agile SQA              |
+| ---------------- | ------------------ | ---------------------- |
+| Entry criteria   | Phase completion   | Sprint backlog ready   |
+| Exit criteria    | Defect decline     | Definition of Done     |
+| Release decision | Curve tail reached | Sprint review approval |
+
+
+#### 7. Roles & Responsibilities
+| Role       | Rayleigh             | Agile           |
+| ---------- | -------------------- | --------------- |
+| QA Manager | Curve monitoring     | Quality coach   |
+| Test Lead  | Peak detection       | Sprint quality  |
+| Developers | Fix assigned defects | Own quality     |
+| Management | Long-term planning   | Sprint steering |
+
+
+#### 8. Risk Management
+| Risk Indicator     | Rayleigh      | Agile          |
+| ------------------ | ------------- | -------------- |
+| Late defects       | High risk     | Early exposure |
+| Requirement change | Disruptive    | Expected       |
+| Process deviation  | Detected late | Detected early |
+
+
+#### 9. Tools & Reporting
+| Area            | Rayleigh        | Agile             |
+| --------------- | --------------- | ----------------- |
+| Defect tracking | Trend charts    | Sprint dashboards |
+| Reporting       | Milestone-based | Real-time         |
+| Automation      | Optional        | Mandatory         |
+
+
+#### 10. Release Readiness
+| Decision Basis    | Rayleigh       | Agile             |
+| ----------------- | -------------- | ----------------- |
+| Stability         | Defect decline | Sprint acceptance |
+| Confidence        | Statistical    | Empirical         |
+| Release frequency | Low            | High              |
+
+
+#### When to Use?
+| Scenario                   | Best Choice              |
+| -------------------------- | ------------------------ |
+| Government / regulated     | Rayleigh                 |
+| Student Waterfall projects | Rayleigh                 |
+| Startup / CI-CD            | Agile                    |
+| Hybrid organizations       | Agile + Rayleigh metrics |
+</file>
+
+</files>
